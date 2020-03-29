@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www":{"guestpath":"/var/www","hostpath":"C:/Users/ostoj/Desktop/development/Architecture","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/ostoj/Desktop/development/Architecture","disabled":false,"__vagrantfile":true}}}
