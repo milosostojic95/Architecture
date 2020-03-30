@@ -45,11 +45,13 @@
   .bottom-content {
     display: flex;
     padding: 2rem 0 8rem;
+    justify-content: space-between;
 
     .copy-right {
 
       p {
         font-size: .85rem !important;
+        color: $textColor;
       }
     }
   }

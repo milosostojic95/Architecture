@@ -1,11 +1,15 @@
 .site-header {
-  height: 5vh;
+  height: 10vh;
+  width: 100%;
+  z-index: 200;
+  position: fixed;
 
   .header-wrapper {
     display: flex;
     justify-content: space-between;
 
     .site-branding {
+      line-height: 10vh;
 
       h1 {
         text-transform: uppercase;
@@ -13,7 +17,6 @@
     }
 
     .main-navigation {
-      line-height: 5vh;
 
       .menu-toggle {
         display: none;
@@ -22,13 +25,15 @@
       .nav-menu {
         display: flex;
         list-style: none;
+        line-height: 10vh;
 
         .page_item {
-          padding-right: 10px;
+          padding-right: 20px;
 
           a {
             text-decoration: none;
             text-transform: uppercase;
+            font-weight: normal;
           }
         }
       }

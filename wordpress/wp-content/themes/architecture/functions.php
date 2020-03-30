@@ -56,7 +56,8 @@ if ( ! function_exists( 'architecture_setup' ) ) :
 			'comment-form',
 			'comment-list',
 			'gallery',
-			'caption',
+      'caption',
+
 		) );
 
 		// Set up the WordPress core custom background feature.

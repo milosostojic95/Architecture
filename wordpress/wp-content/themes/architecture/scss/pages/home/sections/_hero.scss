@@ -1,0 +1,49 @@
+.hero {
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+  }
+
+  .hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0 0;
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+
+      h3 {
+        color: $headingColor;
+        text-align: center;
+        text-shadow: 2px 2px 9px #000000;
+      }
+
+      h1 {
+        color: $headingColor;
+        text-align: center;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 1.4;
+        margin-top: 2rem;
+        text-shadow: 2px 2px 9px #000000;
+      }
+
+      p {
+        text-align: center;
+        color: $headingColor;
+      }
+    }
+  }
+}
