@@ -38,7 +38,10 @@
           </p>
         </div>
         <div class="social-link">
-          <a href="">face</a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>

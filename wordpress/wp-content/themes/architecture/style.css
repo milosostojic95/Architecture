@@ -103,6 +103,21 @@ a {
   color: #7e7d7d;
 }
 
+.site-footer .bottom-content .social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-footer .bottom-content .social-link a {
+  padding-right: 12px;
+}
+
+.site-footer .bottom-content .social-link a i {
+  color: white;
+  font-size: 1.2rem;
+}
+
 .site-header {
   height: 5vh;
   width: 100%;
@@ -310,7 +325,7 @@ a {
 }
 
 .about .about-wrapper .left-part-about .about-title {
-  border: 10px solid #fff;
+  border: 13px solid #fff;
   padding: 1rem;
 }
 
