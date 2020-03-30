@@ -1,5 +1,5 @@
 .site-header {
-  height: 10vh;
+  height: 5vh;
   width: 100%;
   z-index: 200;
   position: fixed;
@@ -9,10 +9,10 @@
     justify-content: space-between;
 
     .site-branding {
-      line-height: 10vh;
 
       h1 {
         text-transform: uppercase;
+        line-height: 5vh;
       }
     }
 
@@ -25,10 +25,26 @@
       .nav-menu {
         display: flex;
         list-style: none;
-        line-height: 10vh;
+        line-height: 5vh;
 
         .page_item {
           padding-right: 20px;
+          position: relative;
+
+          &:hover::after {
+            width: 80%;
+            transition: .3s ease-in-out;
+          }
+
+          &::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+          }
 
           a {
             text-decoration: none;

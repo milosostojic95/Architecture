@@ -7,8 +7,11 @@
           <h3>Cacak,Serbia</h3>
           <h1>Awesome Design for the Vorokhta Hub</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            The main objective of the project – transformation of Vorokhta City in innovative <br> SMART CITY (village) and tourist center.
           </p>
+        </div>
+        <div class="hero-btn">
+          <a href="">read more</a>
         </div>
       </div>
     </div>
