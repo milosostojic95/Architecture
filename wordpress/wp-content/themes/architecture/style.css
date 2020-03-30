@@ -65,7 +65,7 @@ a {
 }
 
 .site-footer .top-content .left-part-footer .footer-title p {
-  color: #b0b0b0;
+  color: #7e7d7d;
   line-height: 1.5;
   font-size: .9rem;
 }
@@ -84,7 +84,7 @@ a {
 
 .site-footer .top-content .right-part-footer p {
   text-align: right;
-  color: #b0b0b0;
+  color: #7e7d7d;
   font-size: .85rem;
 }
 
@@ -100,7 +100,7 @@ a {
 
 .site-footer .bottom-content .copy-right p {
   font-size: .85rem !important;
-  color: #b0b0b0;
+  color: #7e7d7d;
 }
 
 .site-header {
@@ -231,7 +231,7 @@ a {
 
 .hero .hero-wrapper .hero-content p {
   text-align: center;
-  color: #b0b0b0;
+  color: #7e7d7d;
   line-height: 1.4;
 }
 
@@ -283,5 +283,68 @@ a {
   left: -8%;
   top: 50%;
   background-color: #fff;
+}
+
+.about .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8rem 0;
+}
+
+.about .about-wrapper .left-part-about {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-image: url("./assets/about.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-wrapper .left-part-about .about-title {
+  border: 10px solid #fff;
+  padding: 1rem;
+}
+
+.about .about-wrapper .left-part-about .about-title h1 {
+  font-size: 120px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.about .about-wrapper .left-part-about .about-title p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about .about-wrapper .right-part-about {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding-left: 4rem;
+}
+
+.about .about-wrapper .right-part-about h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.about .about-wrapper .right-part-about h1 {
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.about .about-wrapper .right-part-about p {
+  line-height: 1.5;
+  color: #7e7d7d;
 }
 /*# sourceMappingURL=style.css.map */
