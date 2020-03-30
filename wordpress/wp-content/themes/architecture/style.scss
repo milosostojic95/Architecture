@@ -1,0 +1,14 @@
+/*
+  Theme Name: Arhitecture
+  Author: Milos Ostojic
+*/
+
+@import './scss/variables/variables';
+@import './scss/base/base';
+
+//mixins
+@import './scss/mixins/breakpoints';
+
+//layouts
+@import './scss/layouts/footer';
+@import './scss/layouts/header';

@@ -44,7 +44,7 @@ if ( ! function_exists( 'architecture_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'architecture' ),
+			'top-menu' => esc_html__( 'Top menu', 'architecture' ),
 		) );
 
 		/*
@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'architecture_widgets_init' );
  * Enqueue scripts and styles.
  */
 function architecture_scripts() {
-	wp_enqueue_style( 'architecture-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'architecture-style', get_stylesheet_uri(), NULL, microtime());
 
 	wp_enqueue_script( 'architecture-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+a {
+  font-family: $bodyFontFamily;
+  color: $linkColor;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $bodyFontFamily;
+  font-weight: normal;
+}

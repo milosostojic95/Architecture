@@ -1,0 +1,36 @@
+.site-header {
+  height: 5vh;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .site-branding {
+
+      h1 {
+        text-transform: uppercase;
+      }
+    }
+
+    .main-navigation {
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+
+        .page_item {
+          padding-right: 10px;
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
