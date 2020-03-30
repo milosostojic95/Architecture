@@ -14,19 +14,34 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'architecture' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'architecture' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'architecture' ), 'architecture', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="row">
+      <div class="top-content">
+        <div class="left-part-footer">
+          <div class="site-branding">
+            <h1>Dekor</h1>
+          </div>
+          <div class="footer-title">
+            <p>The company principle of Architecture-Studio is the collective conception. From the very beginning, the practice has believed in the virtues of exchange, crossing ideas, common effort, shared knowledge and enthusiasm.</p>
+          </div>
+        </div>
+        <div class="right-part-footer">
+          <p>Get in touch</p>
+          <p>+7 (885) 589 69 85</p>
+          <p>prague-architects@info.com</p>
+          <p>Litačka, Jungmannova 35/29, Nové Město,Czech Republic</p>
+        </div>
+      </div>
+      <div class="bottom-content">
+        <div class="copy-right">
+          <p>
+            2020 Dekor, All Rights Reserved
+          </p>
+        </div>
+        <div class="social-link">
+          <a href="">face</a>
+        </div>
+      </div>
+    </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

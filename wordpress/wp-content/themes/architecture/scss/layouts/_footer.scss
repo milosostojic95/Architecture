@@ -1,0 +1,56 @@
+.site-footer {
+  background-image: linear-gradient(rgba(0,0,0,.9)), url('./assets/footer.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  .top-content {
+    display: flex;
+    padding: 5rem 0 3rem;
+
+    .left-part-footer {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .site-branding {
+
+        h1 {
+          color: $headingColor;
+        }
+      }
+
+      .footer-title {
+
+        p {
+          color: $textColor;
+          line-height: 1.5;
+          font-size: .9rem;
+        }
+      }
+    }
+
+    .right-part-footer {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        text-align: right;
+        color: $textColor;
+        font-size: .85rem;
+      }
+    }
+  }
+
+  .bottom-content {
+    display: flex;
+    padding: 2rem 0 8rem;
+
+    .copy-right {
+
+      p {
+        font-size: .85rem !important;
+      }
+    }
+  }
+}
