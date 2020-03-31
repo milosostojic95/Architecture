@@ -345,6 +345,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 3rem 0 5rem;
 }
 
 .projects .projects-wrapper .project .left-part-img {
@@ -365,7 +366,7 @@ a {
 
 .projects .projects-wrapper .project .right-part-content h3 {
   color: #000;
-  font-size: .9rem;
+  font-size: .95rem;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -380,7 +381,7 @@ a {
   position: absolute;
 }
 
-.projects .projects-wrapper .project .right-part-content .right-title {
+.projects .projects-wrapper .project .right-part-content .right-title h1 {
   color: #000;
   font-size: 40px;
 }
@@ -388,6 +389,52 @@ a {
 .projects .projects-wrapper .project .right-part-content p {
   line-height: 1.5;
   color: #7e7d7d;
+}
+
+.projects .projects-wrapper .project .left-part-content {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  padding: 5rem 4rem 5rem 0;
+}
+
+.projects .projects-wrapper .project .left-part-content h3 {
+  text-align: right;
+  color: #000;
+  font-size: .95rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.projects .projects-wrapper .project .left-part-content h3::before {
+  content: '';
+  background-color: #000;
+  height: 1px;
+  width: 80px;
+  top: 50%;
+  right: -100px;
+  position: absolute;
+}
+
+.projects .projects-wrapper .project .left-part-content .left-title h1 {
+  color: #000;
+  font-size: 40px;
+  text-align: right;
+}
+
+.projects .projects-wrapper .project .left-part-content p {
+  line-height: 1.5;
+  color: #7e7d7d;
+  text-align: right;
+}
+
+.projects .projects-wrapper .project .right-part-img {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.projects .projects-wrapper .project .right-part-img img {
+  height: 100%;
+  width: 100%;
 }
 
 .hero-btn {
@@ -440,22 +487,22 @@ a {
   background-color: #fff;
 }
 
-.project-btn {
+.project-btn-right {
   padding-top: 2rem;
 }
 
-.project-btn a {
+.project-btn-right a {
   font-size: .95rem;
   text-transform: uppercase;
   color: #000;
   position: relative;
 }
 
-.project-btn a:hover .right-arrow {
+.project-btn-right a:hover .right-arrow {
   right: -60px;
 }
 
-.project-btn a .right-arrow {
+.project-btn-right a .right-arrow {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -468,7 +515,7 @@ a {
   background-color: #111;
 }
 
-.project-btn a .right-arrow::before {
+.project-btn-right a .right-arrow::before {
   position: absolute;
   display: block;
   right: 0px;
@@ -480,7 +527,60 @@ a {
           transform: translateX(0) translateY(-3px) rotate(45deg);
 }
 
-.project-btn a .right-arrow::after {
+.project-btn-right a .right-arrow::after {
+  position: absolute;
+  display: block;
+  right: 0px;
+  width: 6px;
+  height: 1px;
+  content: '';
+  background-color: #111;
+  -webkit-transform: translateX(0) translateY(3px) rotate(-45deg);
+          transform: translateX(0) translateY(3px) rotate(-45deg);
+}
+
+.project-btn-left {
+  padding: 2rem 4rem 0 0;
+  float: right;
+}
+
+.project-btn-left a {
+  font-size: .95rem;
+  text-transform: uppercase;
+  color: #000;
+  position: relative;
+}
+
+.project-btn-left a:hover .right-arrow {
+  right: -60px;
+}
+
+.project-btn-left a .right-arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  right: -49px;
+  width: 31px;
+  height: 1px;
+  -webkit-transition: right .3s ease-in;
+  transition: right .3s ease-in;
+  background-color: #111;
+}
+
+.project-btn-left a .right-arrow::before {
+  position: absolute;
+  display: block;
+  right: 0px;
+  width: 6px;
+  height: 1px;
+  content: '';
+  background-color: #111;
+  -webkit-transform: translateX(0) translateY(-3px) rotate(45deg);
+          transform: translateX(0) translateY(-3px) rotate(45deg);
+}
+
+.project-btn-left a .right-arrow::after {
   position: absolute;
   display: block;
   right: 0px;

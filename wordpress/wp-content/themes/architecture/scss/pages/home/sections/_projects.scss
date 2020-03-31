@@ -23,6 +23,7 @@
     .project {
       flex-basis: 100%;
       display: flex;
+      padding: 3rem 0 5rem;
 
       .left-part-img {
         flex-basis: 55%;
@@ -39,7 +40,7 @@
 
         h3 {
           color: $sectionHeadingColor;
-          font-size: .9rem;
+          font-size: .95rem;
           margin-bottom: 1rem;
           position: relative;
 
@@ -55,13 +56,63 @@
         }
 
         .right-title {
-          color: $sectionHeadingColor;
-          font-size: 40px;
+
+          h1 {
+            color: $sectionHeadingColor;
+            font-size: 40px;
+          }
         }
 
         p {
           line-height: 1.5;
           color: $textColor;
+        }
+      }
+
+      .left-part-content {
+        flex-basis: 55%;
+        padding: 5rem 4rem 5rem 0;
+
+        h3 {
+          text-align: right;
+          color: $sectionHeadingColor;
+          font-size: .95rem;
+          margin-bottom: 1rem;
+          position: relative;
+
+          &::before {
+            content: '';
+            background-color: $hoverTextColor;
+            height: 1px;
+            width: 80px;
+            top: 50%;
+            right: -100px;
+            position: absolute;
+          }
+        }
+
+        .left-title {
+
+          h1 {
+            color: $sectionHeadingColor;
+             font-size: 40px;
+             text-align: right;
+          }
+        }
+
+        p {
+          line-height: 1.5;
+          color: $textColor;
+          text-align: right;
+        }
+      }
+
+      .right-part-img {
+        flex-basis: 45%;
+
+        img {
+          height: 100%;
+          width: 100%;
         }
       }
     }
