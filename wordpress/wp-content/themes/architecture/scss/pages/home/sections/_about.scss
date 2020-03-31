@@ -1,17 +1,46 @@
 .about {
 
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0;
+  }
+
   .about-wrapper {
     display: flex;
     padding: 8rem 0;
+    flex-wrap: wrap;
+
+    @include breakpoint(tablet) {
+      flex-wrap: nowrap;
+    }
 
     .left-part-about {
-      flex-basis: 35%;
       background-image: url('./assets/about.jpg');
       background-position: center center;
       background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+        padding: 2rem 0;
+      }
+
+      @include breakpoint(tablet) {
+        flex-basis: 35%;
+      }
 
       .about-title {
         border: 13px solid $borderColor;
@@ -31,8 +60,15 @@
     }
 
     .right-part-about {
-      flex-basis: 65%;
       padding-left: 2rem;
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+      }
+
+      @include breakpoint(tablet) {
+        flex-basis: 65%;
+      }
 
       h2 {
         font-size: 1.3rem;

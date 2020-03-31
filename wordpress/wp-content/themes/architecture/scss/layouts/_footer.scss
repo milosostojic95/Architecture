@@ -3,6 +3,22 @@
   background-position: center center;
   background-size: cover;
 
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0;
+  }
+
   .top-content {
     display: flex;
     padding: 5rem 0 3rem;

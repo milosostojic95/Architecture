@@ -1,5 +1,21 @@
 .projects {
 
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0;
+  }
+
   .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +45,7 @@
         flex-basis: 55%;
 
         img {
-          height: 100%;
+          height: 420px;
           width: 100%;
         }
       }
@@ -111,7 +127,7 @@
         flex-basis: 55%;
 
         img {
-          height: 100%;
+          height: 420px;
           width: 100%;
         }
       }

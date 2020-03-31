@@ -43,13 +43,13 @@ if ( ! function_exists( 'architecture_setup' ) ) :
       'caption',
 
 		) );
-		
+
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'top-menu' => esc_html__( 'Top menu', 'architecture' ),
+			'top-menu' => __('Top Menu', 'architecture'),
 		) );
-		
+
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'architecture_custom_background_args', array(

@@ -8,6 +8,23 @@
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint(mobile) {
+      padding: 0 2rem;
+    }
+
+    @include breakpoint(smallTablet) {
+      padding: 0 3rem;
+    }
+
+    @include breakpoint(tablet) {
+      padding: 0 5rem;
+    }
+
+    @include breakpoint(laptop) {
+      padding: 0;
+    }
+
+
     .site-branding {
 
       h1 {
@@ -27,7 +44,7 @@
         list-style: none;
         line-height: 5vh;
 
-        .page_item {
+        .menu-item {
           padding-right: 20px;
           position: relative;
 
