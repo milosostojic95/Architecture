@@ -237,10 +237,11 @@ a {
 }
 
 .site-header {
-  height: 5vh;
   width: 100%;
   z-index: 200;
   position: fixed;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 .site-header .header-wrapper {
@@ -278,7 +279,7 @@ a {
 
 .site-header .header-wrapper .site-branding h1 {
   text-transform: uppercase;
-  line-height: 5vh;
+  padding: .8rem 0;
 }
 
 @media screen and (min-width: 320px) {
@@ -302,12 +303,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  line-height: 5vh;
 }
 
 .site-header .header-wrapper .main-navigation .nav-menu .menu-item {
-  padding-right: 20px;
   position: relative;
+  padding: .8rem 1rem .8rem 0;
 }
 
 .site-header .header-wrapper .main-navigation .nav-menu .menu-item:hover::after {

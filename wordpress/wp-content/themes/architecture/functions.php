@@ -114,7 +114,8 @@ add_action( 'widgets_init', 'architecture_widgets_init' );
 function architecture_scripts() {
 
   wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-	wp_enqueue_style( 'architecture-style', get_stylesheet_uri(), NULL, microtime());
+  wp_enqueue_style( 'architecture-style', get_stylesheet_uri(), NULL, microtime());
+  wp_enqueue_script("main", get_theme_file_uri('/js/main.js'), NULL, microtime(), true);
 
 	wp_enqueue_script( 'architecture-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
