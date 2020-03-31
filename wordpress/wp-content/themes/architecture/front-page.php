@@ -11,7 +11,7 @@
           </p>
         </div>
         <div class="hero-btn">
-          <a href="">read more</a>
+          <a href="">explore it</a>
         </div>
       </div>
     </div>
@@ -33,6 +33,37 @@
           </h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod ratione consequatur explicabo corrupti quisquam tempore asperiores iusto, fuga rerum ducimus veritatis id eaque assumenda architecto enim, repellat ex alias.</p>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, quisquam ipsum! Eveniet eius error libero possimus, quos labore soluta et sunt fuga adipisci perspiciatis aliquid fugit. Asperiores vero ab repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique cumque maiores sed impedit facere, voluptates iste, consectetur enim magnam qui. Aut culpa dolorem in ipsum labore ea libero optio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects">
+    <div class="row">
+      <div class="projects-wrapper">
+        <div class="projects-title">
+          <h2>Last Projects</h2>
+          <h1>Make it with passion.</h1>
+        </div>
+        <div class="project">
+          <div class="left-part-img">
+            <img src="<?php echo get_template_directory_uri();?>/assets/hero.jpg" alt="">
+          </div>
+          <div class="right-part-content">
+            <h3>2010</h3>
+            <a href="" class="right-title">Poolscape Villa</a>
+            <p>
+              The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
+            </p>
+            <div class="project-btn">
+              <a href="">read more
+                <span class="right-arrow"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="left-part-content"></div>
+          <div class="right-part-img"></div>
         </div>
       </div>
     </div>

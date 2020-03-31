@@ -250,56 +250,6 @@ a {
   line-height: 1.4;
 }
 
-.hero .hero-wrapper .hero-btn {
-  margin-top: 2rem;
-}
-
-.hero .hero-wrapper .hero-btn a {
-  padding: .8rem 1.2rem;
-  border: 1px solid #fff;
-  position: relative;
-  text-transform: uppercase;
-  font-size: .8rem;
-  letter-spacing: 2px;
-}
-
-.hero .hero-wrapper .hero-btn a:hover {
-  background-color: #fff;
-  color: #000;
-  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
-  transition: color .2s ease-in, background-color .2s ease-in;
-}
-
-.hero .hero-wrapper .hero-btn a:hover::after {
-  background-color: #000;
-}
-
-.hero .hero-wrapper .hero-btn a:hover::before {
-  background-color: #000;
-}
-
-.hero .hero-wrapper .hero-btn a::after {
-  content: '';
-  height: 1px;
-  width: 20px;
-  position: absolute;
-  right: -8%;
-  top: 50%;
-  background-color: #fff;
-  z-index: 20;
-}
-
-.hero .hero-wrapper .hero-btn a::before {
-  content: '';
-  z-index: 20;
-  height: 1px;
-  width: 20px;
-  position: absolute;
-  left: -8%;
-  top: 50%;
-  background-color: #fff;
-}
-
 .about .about-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,8 +258,8 @@ a {
 }
 
 .about .about-wrapper .left-part-about {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   background-image: url("./assets/about.jpg");
   background-position: center center;
   background-size: cover;
@@ -341,9 +291,9 @@ a {
 }
 
 .about .about-wrapper .right-part-about {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  padding-left: 4rem;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  padding-left: 2rem;
 }
 
 .about .about-wrapper .right-part-about h2 {
@@ -361,5 +311,184 @@ a {
 .about .about-wrapper .right-part-about p {
   line-height: 1.5;
   color: #7e7d7d;
+  padding-bottom: 2rem;
+}
+
+.projects .projects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects .projects-wrapper .projects-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.projects .projects-wrapper .projects-title h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.projects .projects-wrapper .projects-title h1 {
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.projects .projects-wrapper .project {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .projects-wrapper .project .left-part-img {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.projects .projects-wrapper .project .left-part-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.projects .projects-wrapper .project .right-part-content {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding: 5rem 0 5rem 4rem;
+}
+
+.projects .projects-wrapper .project .right-part-content h3 {
+  color: #000;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.projects .projects-wrapper .project .right-part-content h3::before {
+  content: '';
+  background-color: #000;
+  height: 1px;
+  width: 80px;
+  top: 50%;
+  left: -100px;
+  position: absolute;
+}
+
+.projects .projects-wrapper .project .right-part-content .right-title {
+  color: #000;
+  font-size: 40px;
+}
+
+.projects .projects-wrapper .project .right-part-content p {
+  line-height: 1.5;
+  color: #7e7d7d;
+}
+
+.hero-btn {
+  margin-top: 2rem;
+}
+
+.hero-btn a {
+  padding: .8rem 1.4rem;
+  border: 1px solid #fff;
+  position: relative;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+
+.hero-btn a:hover {
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+  transition: color .2s ease-in, background-color .2s ease-in;
+}
+
+.hero-btn a:hover::after {
+  background-color: #000;
+}
+
+.hero-btn a:hover::before {
+  background-color: #000;
+}
+
+.hero-btn a::after {
+  content: '';
+  height: 1px;
+  width: 20px;
+  position: absolute;
+  right: -8%;
+  top: 50%;
+  background-color: #fff;
+  z-index: 20;
+}
+
+.hero-btn a::before {
+  content: '';
+  z-index: 20;
+  height: 1px;
+  width: 20px;
+  position: absolute;
+  left: -8%;
+  top: 50%;
+  background-color: #fff;
+}
+
+.project-btn {
+  padding-top: 2rem;
+}
+
+.project-btn a {
+  font-size: .95rem;
+  text-transform: uppercase;
+  color: #000;
+  position: relative;
+}
+
+.project-btn a:hover .right-arrow {
+  right: -60px;
+}
+
+.project-btn a .right-arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  right: -49px;
+  width: 31px;
+  height: 1px;
+  -webkit-transition: right .3s ease-in;
+  transition: right .3s ease-in;
+  background-color: #111;
+}
+
+.project-btn a .right-arrow::before {
+  position: absolute;
+  display: block;
+  right: 0px;
+  width: 6px;
+  height: 1px;
+  content: '';
+  background-color: #111;
+  -webkit-transform: translateX(0) translateY(-3px) rotate(45deg);
+          transform: translateX(0) translateY(-3px) rotate(45deg);
+}
+
+.project-btn a .right-arrow::after {
+  position: absolute;
+  display: block;
+  right: 0px;
+  width: 6px;
+  height: 1px;
+  content: '';
+  background-color: #111;
+  -webkit-transform: translateX(0) translateY(3px) rotate(-45deg);
+          transform: translateX(0) translateY(3px) rotate(-45deg);
 }
 /*# sourceMappingURL=style.css.map */
