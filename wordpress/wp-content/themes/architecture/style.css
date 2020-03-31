@@ -392,8 +392,8 @@ a {
 }
 
 .projects .projects-wrapper .project .left-part-content {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
   padding: 5rem 4rem 5rem 0;
 }
 
@@ -428,8 +428,8 @@ a {
 }
 
 .projects .projects-wrapper .project .right-part-img {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
 }
 
 .projects .projects-wrapper .project .right-part-img img {
