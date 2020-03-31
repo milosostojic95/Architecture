@@ -1005,4 +1005,30 @@ a {
   -webkit-transform: translateX(0) translateY(3px) rotate(-45deg);
           transform: translateX(0) translateY(3px) rotate(-45deg);
 }
+
+.blog-hero {
+  height: 60vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.blog-hero .blog-hero-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.blog-hero .blog-hero-wrapper .blog-title h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.blog-hero .blog-hero-wrapper .blog-title h1 {
+  color: #fff;
+  font-size: 40px;
+}
 /*# sourceMappingURL=style.css.map */
