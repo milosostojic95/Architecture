@@ -23,15 +23,38 @@
     display: flex;
     padding: 5rem 0 3rem;
 
+    @include breakpoint(mobile) {
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint(smallTablet) {
+      flex-wrap: nowrap;
+    }
+
     .left-part-footer {
-      flex-basis: 50%;
       display: flex;
       flex-direction: column;
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+      }
+
+      @include breakpoint(smallTablet) {
+        flex-basis: 50%;
+      }
 
       .site-branding {
 
         h1 {
           color: $headingColor;
+
+          @include breakpoint(mobile) {
+            text-align: center;
+          }
+
+          @include breakpoint(smallTablet) {
+            text-align: left;
+          }
         }
       }
 
@@ -41,19 +64,41 @@
           color: $textColor;
           line-height: 1.5;
           font-size: .9rem;
+
+          @include breakpoint(mobile) {
+            text-align: center;
+          }
+
+          @include breakpoint(smallTablet) {
+            text-align: left;
+          }
         }
       }
     }
 
     .right-part-footer {
-      flex-basis: 50%;
       display: flex;
       flex-direction: column;
 
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+      }
+
+      @include breakpoint(smallTablet) {
+        flex-basis: 50%;
+      }
+
       p {
-        text-align: right;
         color: $textColor;
         font-size: .85rem;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(smallTablet) {
+          text-align: right;
+        }
       }
     }
   }
@@ -62,6 +107,15 @@
     display: flex;
     padding: 2rem 0 8rem;
     justify-content: space-between;
+
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include breakpoint(smallTablet) {
+      flex-direction: row;
+    }
 
     .copy-right {
 

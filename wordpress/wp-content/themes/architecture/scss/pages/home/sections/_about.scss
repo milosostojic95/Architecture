@@ -60,19 +60,28 @@
     }
 
     .right-part-about {
-      padding-left: 2rem;
 
       @include breakpoint(mobile) {
         flex-basis: 100%;
+        padding: 2rem 0 0 0;
       }
 
       @include breakpoint(tablet) {
         flex-basis: 65%;
+        padding-left: 2rem;
       }
 
       h2 {
         font-size: 1.3rem;
         text-transform: uppercase;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(tablet) {
+          text-align: left;
+        }
       }
 
       h1 {
@@ -80,12 +89,28 @@
         color: $sectionHeadingColor;
         font-weight: bold;
         padding: 1rem 0;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(tablet) {
+          text-align: left;
+        }
       }
 
       p {
         line-height: 1.5;
         color: $textColor;
         padding-bottom: 2rem;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(tablet) {
+          text-align: left;
+        }
       }
     }
   }

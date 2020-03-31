@@ -26,6 +26,14 @@
       h2 {
         font-size: 1.3rem;
         text-transform: uppercase;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(tablet) {
+          text-align: left;
+        }
       }
 
       h1 {
@@ -33,16 +41,40 @@
         color: $sectionHeadingColor;
         font-weight: bold;
         padding: 1rem 0;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(tablet) {
+          text-align: left;
+        }
       }
     }
 
     .project {
       flex-basis: 100%;
       display: flex;
-      padding: 3rem 0 5rem;
+
+      @include breakpoint(mobile) {
+        padding: 1rem 0;
+        flex-wrap: wrap;
+      }
+
+      @include breakpoint(smallTablet) {
+        padding: 3rem 0 5rem;
+        flex-wrap: nowrap;
+      }
 
       .left-part-img {
-        flex-basis: 55%;
+
+        @include breakpoint(mobile) {
+          flex-basis: 100%;
+        }
+
+        @include breakpoint(smallTablet) {
+          flex-basis: 55%;
+        }
 
         img {
           height: 420px;
@@ -51,8 +83,16 @@
       }
 
       .right-part-content {
-        flex-basis: 45%;
-        padding: 5rem 0 5rem 4rem;
+
+        @include breakpoint(mobile) {
+          flex-basis: 100%;
+          padding: 3rem 0;
+        }
+
+        @include breakpoint(smallTablet) {
+          flex-basis: 45%;
+          padding: 5rem 0 5rem 4rem;
+        }
 
         h3 {
           color: $sectionHeadingColor;
@@ -66,7 +106,7 @@
             height: 1px;
             width: 80px;
             top: 50%;
-            left: -100px;
+            left: -90px;
             position: absolute;
           }
         }
@@ -86,8 +126,16 @@
       }
 
       .left-part-content {
-        flex-basis: 45%;
-        padding: 5rem 4rem 5rem 0;
+
+        @include breakpoint(mobile) {
+          flex-basis: 100%;
+          padding: 3rem 0;
+        }
+
+        @include breakpoint(smallTablet) {
+          flex: 45%;
+          padding: 5rem 4rem 5rem 0;
+        }
 
         h3 {
           text-align: right;
@@ -100,10 +148,18 @@
             content: '';
             background-color: $hoverTextColor;
             height: 1px;
-            width: 80px;
             top: 50%;
-            right: -100px;
             position: absolute;
+
+            @include breakpoint(mobile) {
+              width: 20px;
+              right: -35px;
+            }
+
+            @include breakpoint(smallTablet) {
+              width: 80px;
+              right: -90px;
+            }
           }
         }
 
@@ -126,6 +182,14 @@
       .right-part-img {
         flex-basis: 55%;
 
+        @include breakpoint(mobile) {
+          flex-basis: 100%;
+        }
+
+        @include breakpoint(smallTablet) {
+          flex: 55%;
+        }
+
         img {
           height: 420px;
           width: 100%;
@@ -134,3 +198,26 @@
     }
   }
 }
+
+.only-lg {
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+
+  @include breakpoint(smallTablet) {
+    display: block;
+  }
+}
+
+.only-xs {
+
+  @include breakpoint(mobile) {
+    display: block;
+  }
+
+  @include breakpoint(smallTablet) {
+    display: none;
+  }
+}
+
