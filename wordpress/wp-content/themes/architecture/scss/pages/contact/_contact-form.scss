@@ -1,0 +1,31 @@
+.contact-form {
+
+  .contact-wrapper {
+    padding: 5rem 0 8rem;
+    display: flex;
+
+    .left-part-contact {
+      flex-basis: 50%;
+
+      h3 {
+        color: $sectionHeadingColor;
+        font-size: 1.3rem;
+      }
+
+      h1 {
+        color: $sectionHeadingColor;
+        font-size: 40px;
+        padding: .7rem 0;
+      }
+
+      p {
+        color: $textColor;
+        line-height: 1.5;
+      }
+    }
+
+    .right-part-contact {
+      flex-basis: 50%;
+    }
+  }
+}
