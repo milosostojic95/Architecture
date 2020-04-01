@@ -180,7 +180,6 @@
       }
 
       .right-part-img {
-        flex-basis: 55%;
 
         @include breakpoint(mobile) {
           flex-basis: 100%;
@@ -196,28 +195,30 @@
         }
       }
     }
+
+    .only-lg {
+
+      @include breakpoint(mobile) {
+        display: none;
+      }
+
+      @include breakpoint(smallTablet) {
+        display: flex;
+      }
+    }
+
+    .only-xs {
+
+      @include breakpoint(mobile) {
+        display: block;
+      }
+
+      @include breakpoint(smallTablet) {
+        display: none;
+      }
+    }
   }
 }
 
-.only-lg {
 
-  @include breakpoint(mobile) {
-    display: none;
-  }
-
-  @include breakpoint(smallTablet) {
-    display: block;
-  }
-}
-
-.only-xs {
-
-  @include breakpoint(mobile) {
-    display: block;
-  }
-
-  @include breakpoint(smallTablet) {
-    display: none;
-  }
-}
 

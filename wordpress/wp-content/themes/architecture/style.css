@@ -802,11 +802,6 @@ a {
   text-align: right;
 }
 
-.projects .projects-wrapper .project .right-part-img {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
-}
-
 @media screen and (min-width: 320px) {
   .projects .projects-wrapper .project .right-part-img {
     -ms-flex-preferred-size: 100%;
@@ -828,25 +823,27 @@ a {
 }
 
 @media screen and (min-width: 320px) {
-  .only-lg {
+  .projects .projects-wrapper .only-lg {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .only-lg {
-    display: block;
+  .projects .projects-wrapper .only-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media screen and (min-width: 320px) {
-  .only-xs {
+  .projects .projects-wrapper .only-xs {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .only-xs {
+  .projects .projects-wrapper .only-xs {
     display: none;
   }
 }
@@ -1076,5 +1073,53 @@ a {
   text-align: center;
   color: #fff;
   font-weight: bold;
+}
+
+.about-numbers .numbers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8rem 0;
+}
+
+.about-numbers .numbers-wrapper .left-part-numbers {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-image: url("./assets/about-number.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-numbers .numbers-wrapper .left-part-numbers .number-titles {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about-numbers .numbers-wrapper .right-part-numbers {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding-left: 2rem;
+}
+
+.about-numbers .numbers-wrapper .right-part-numbers h2 {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.about-numbers .numbers-wrapper .right-part-numbers h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.about-numbers .numbers-wrapper .right-part-numbers p {
+  line-height: 1.5;
+  color: #7e7d7d;
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
