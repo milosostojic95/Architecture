@@ -55,4 +55,13 @@
     </div>
   </div>
 </section>
+<section class="about-us">
+  <div class="row">
+    <div class="about-us-wrapper">
+      <h1><?php the_title();?></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consectetur optio fugiat id qui nemo ducimus? Tempore, accusamus animi, dolor consectetur quasi optio molestiae expedita quae dolorem repudiandae, dolores minus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum at, harum eligendi sed nobis voluptate nisi corporis blanditiis magnam earum vel tempore delectus neque maiores adipisci, ut odio itaque!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita veritatis nostrum, fugiat non eligendi autem quos vitae doloribus in quia perferendis ipsum? Quidem, cupiditate nulla? Molestiae reprehenderit veritatis accusantium odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates quasi impedit accusantium labore laboriosam ab quidem veniam quas nisi repellat expedita asperiores reiciendis est ut enim, voluptatibus minus molestias.</p>
+    </div>
+  </div>
+</section>
 <?php get_footer();?>

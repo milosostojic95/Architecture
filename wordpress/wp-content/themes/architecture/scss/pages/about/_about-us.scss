@@ -1,0 +1,41 @@
+.about-us {
+
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 0;
+  }
+
+  .about-us-wrapper {
+    padding: 2rem 0 8rem;
+
+    h1 {
+      font-size: 3rem;
+      color: $sectionHeadingColor;
+    }
+
+    p {
+      line-height: 1.5;
+      color: $textColor;
+      font-size: 1rem;
+    }
+  }
+}

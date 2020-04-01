@@ -1,19 +1,39 @@
 .about-numbers {
 
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 0;
+  }
+
   .numbers-wrapper {
     display: flex;
     padding: 8rem 0;
 
     .left-part-numbers {
-      flex-basis: 30%;
-      background-color: white;
+      flex-basis: 40%;
+      background-color: $hoverBg;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
       display: flex;
       flex-wrap: wrap;
       background-image: url('./assets/about-number.jpg');
-      padding: .8rem;
+      padding: 1rem;
 
       .number-titles {
         flex-basis: 50%;
@@ -21,12 +41,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: white;
-        padding: 1rem 0;
+        background-color: $hoverBg;
+        padding: 1.5rem 0;
 
         h1 {
           font-size: 70px;
-          font-weight: bolder;
+          font-weight: bold;
+          color: $numberColor;
         }
 
         p {
@@ -38,7 +59,7 @@
     }
 
     .right-part-numbers {
-      flex-basis: 70%;
+      flex-basis: 60%;
       padding-left: 2rem;
 
       h2 {
