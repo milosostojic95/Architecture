@@ -1,0 +1,33 @@
+.about-hero {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-hero-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      font-size: 1.2vw;
+      text-align: center;
+      color: $headingColor;
+      text-align: center;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5vw;
+      text-align: center;
+      color: $headingColor;
+      font-weight: bold;
+    }
+  }
+
+}
