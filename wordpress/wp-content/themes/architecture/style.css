@@ -1306,7 +1306,6 @@ a {
 .about-numbers .numbers-wrapper .right-part-numbers {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  padding-left: 2rem;
 }
 
 @media screen and (min-width: 320px) {
@@ -1321,6 +1320,7 @@ a {
   .about-numbers .numbers-wrapper .right-part-numbers {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
+    padding-left: 2rem;
   }
 }
 
@@ -1487,26 +1487,119 @@ a {
 .contact-form .contact-wrapper .left-part-contact {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.contact-form .contact-wrapper .left-part-contact h3 {
+.contact-form .contact-wrapper .left-part-contact .contact-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.contact-form .contact-wrapper .left-part-contact .contact-title h3 {
   color: #000;
   font-size: 1.3rem;
 }
 
-.contact-form .contact-wrapper .left-part-contact h1 {
+.contact-form .contact-wrapper .left-part-contact .contact-title h1 {
   color: #000;
   font-size: 40px;
   padding: .7rem 0;
 }
 
-.contact-form .contact-wrapper .left-part-contact p {
+.contact-form .contact-wrapper .left-part-contact .contact-title p {
   color: #7e7d7d;
   line-height: 1.5;
+}
+
+.contact-form .contact-wrapper .left-part-contact .contact-info {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 2rem;
 }
 
 .contact-form .contact-wrapper .right-part-contact {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.project-hero {
+  background-image: url("./assets/contact.jpg");
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.project-hero .project-hero-wrapper .project-hero-title {
+  padding: 15rem 0;
+}
+
+.project-hero .project-hero-wrapper .project-hero-title h3 {
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .project-hero .project-hero-wrapper .project-hero-title h3 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .project-hero .project-hero-wrapper .project-hero-title h3 {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .project-hero .project-hero-wrapper .project-hero-title h3 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project-hero .project-hero-wrapper .project-hero-title h3 {
+    font-size: 1.2vw;
+  }
+}
+
+.project-hero .project-hero-wrapper .project-hero-title h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 320px) {
+  .project-hero .project-hero-wrapper .project-hero-title h1 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .project-hero .project-hero-wrapper .project-hero-title h1 {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .project-hero .project-hero-wrapper .project-hero-title h1 {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project-hero .project-hero-wrapper .project-hero-title h1 {
+    font-size: 2.5vw;
+  }
+}
+
+.post-inner {
+  width: 400px;
 }
 /*# sourceMappingURL=style.css.map */

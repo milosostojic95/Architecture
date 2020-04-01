@@ -82,7 +82,7 @@
 
     .right-part-numbers {
       flex-basis: 60%;
-      padding-left: 2rem;
+
 
       @include breakpoint(mobile) {
         flex-basis: 100%;
@@ -91,6 +91,7 @@
 
       @include breakpoint(tablet) {
         flex-basis: 60%;
+        padding-left: 2rem;
       }
 
       h2 {

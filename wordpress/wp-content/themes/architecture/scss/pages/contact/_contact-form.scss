@@ -6,21 +6,32 @@
 
     .left-part-contact {
       flex-basis: 50%;
+      display: flex;
+      flex-wrap: wrap;
 
-      h3 {
-        color: $sectionHeadingColor;
-        font-size: 1.3rem;
+      .contact-title {
+        flex-basis: 100%;
+
+        h3 {
+          color: $sectionHeadingColor;
+          font-size: 1.3rem;
+        }
+
+        h1 {
+          color: $sectionHeadingColor;
+          font-size: 40px;
+          padding: .7rem 0;
+        }
+
+        p {
+          color: $textColor;
+          line-height: 1.5;
+        }
       }
 
-      h1 {
-        color: $sectionHeadingColor;
-        font-size: 40px;
-        padding: .7rem 0;
-      }
-
-      p {
-        color: $textColor;
-        line-height: 1.5;
+      .contact-info {
+        flex-basis: 50%;
+        padding-top: 2rem;
       }
     }
 
