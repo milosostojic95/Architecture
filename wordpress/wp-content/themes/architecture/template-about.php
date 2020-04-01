@@ -23,16 +23,16 @@
     <div class="numbers-wrapper">
       <div class="left-part-numbers">
         <div class="number-titles">
-          <h1>185</h1>
+          <h1>980</h1>
           <p>project done</p>
         </div>
         <div class="number-titles">
         <h1>185</h1>
-          <p>project done</p>
+          <p>happy clients</p>
         </div>
         <div class="number-titles">
-        <h1>185</h1>
-          <p>project done</p>
+        <h1>756</h1>
+          <p>working hours</p>
         </div>
         <div class="number-titles">
         <h1>185</h1>
