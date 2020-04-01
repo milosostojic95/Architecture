@@ -1402,4 +1402,78 @@ a {
   color: #7e7d7d;
   font-size: 1rem;
 }
+
+.contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("./assets/contact.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("./assets/contact.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact .contact-wrapper {
+  padding: 20rem 0;
+}
+
+.contact .contact-wrapper .contact-title h3 {
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .contact .contact-wrapper .contact-title h3 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .contact .contact-wrapper .contact-title h3 {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .contact .contact-wrapper .contact-title h3 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact .contact-wrapper .contact-title h3 {
+    font-size: 1.2vw;
+  }
+}
+
+.contact .contact-wrapper .contact-title h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 320px) {
+  .contact .contact-wrapper .contact-title h1 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .contact .contact-wrapper .contact-title h1 {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .contact .contact-wrapper .contact-title h1 {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact .contact-wrapper .contact-title h1 {
+    font-size: 2.5vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
