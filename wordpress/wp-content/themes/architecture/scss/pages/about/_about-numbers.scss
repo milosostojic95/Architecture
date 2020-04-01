@@ -24,8 +24,15 @@
     display: flex;
     padding: 8rem 0;
 
+    @include breakpoint(mobile) {
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint(tablet) {
+      flex-wrap: nowrap;
+    }
+
     .left-part-numbers {
-      flex-basis: 40%;
       background-color: $hoverBg;
       background-size: cover;
       background-position: center center;
@@ -34,6 +41,14 @@
       flex-wrap: wrap;
       background-image: url('./assets/about-number.jpg');
       padding: 1rem;
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+      }
+
+      @include breakpoint(tablet) {
+        flex-basis: 40%;
+      }
 
       .number-titles {
         flex-basis: 50%;
@@ -51,9 +66,16 @@
         }
 
         p {
-          font-size: 1rem;
           font-weight: normal;
           text-transform: uppercase;
+
+          @include breakpoint(mobile) {
+            font-size: .8rem;
+          }
+
+          @include breakpoint(smallTablet) {
+            font-size: 1rem;
+          }
         }
       }
     }
@@ -61,6 +83,15 @@
     .right-part-numbers {
       flex-basis: 60%;
       padding-left: 2rem;
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+        padding: 2rem 0 0;
+      }
+
+      @include breakpoint(tablet) {
+        flex-basis: 60%;
+      }
 
       h2 {
         color: $sectionHeadingColor;
@@ -76,7 +107,14 @@
       p {
         line-height: 1.5;
         color: $textColor;
-        padding-bottom: 2rem;
+
+        @include breakpoint(mobile) {
+          padding-bottom: 1rem;
+        }
+
+        @include breakpoint(tablet) {
+          padding-bottom: 2rem;
+        }
       }
     }
   }

@@ -1218,9 +1218,21 @@ a {
   padding: 8rem 0;
 }
 
+@media screen and (min-width: 320px) {
+  .about-numbers .numbers-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .about-numbers .numbers-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .about-numbers .numbers-wrapper .left-part-numbers {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
   background-color: #fff;
   background-size: cover;
   background-position: center center;
@@ -1232,6 +1244,20 @@ a {
       flex-wrap: wrap;
   background-image: url("./assets/about-number.jpg");
   padding: 1rem;
+}
+
+@media screen and (min-width: 320px) {
+  .about-numbers .numbers-wrapper .left-part-numbers {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .about-numbers .numbers-wrapper .left-part-numbers {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
 }
 
 .about-numbers .numbers-wrapper .left-part-numbers .number-titles {
@@ -1261,15 +1287,41 @@ a {
 }
 
 .about-numbers .numbers-wrapper .left-part-numbers .number-titles p {
-  font-size: 1rem;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 320px) {
+  .about-numbers .numbers-wrapper .left-part-numbers .number-titles p {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-numbers .numbers-wrapper .left-part-numbers .number-titles p {
+    font-size: 1rem;
+  }
 }
 
 .about-numbers .numbers-wrapper .right-part-numbers {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   padding-left: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .about-numbers .numbers-wrapper .right-part-numbers {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 2rem 0 0;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .about-numbers .numbers-wrapper .right-part-numbers {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
 }
 
 .about-numbers .numbers-wrapper .right-part-numbers h2 {
@@ -1286,7 +1338,18 @@ a {
 .about-numbers .numbers-wrapper .right-part-numbers p {
   line-height: 1.5;
   color: #7e7d7d;
-  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .about-numbers .numbers-wrapper .right-part-numbers p {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .about-numbers .numbers-wrapper .right-part-numbers p {
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 320px) {
