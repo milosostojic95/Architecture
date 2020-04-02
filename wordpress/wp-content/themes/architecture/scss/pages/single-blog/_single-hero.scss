@@ -1,0 +1,17 @@
+.blog-single {
+
+  .single-wrapper {
+
+    .single-title {
+      padding: 15rem 0;
+      background: black;
+
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        padding: 2rem 5rem;
+        color: $headingColor;
+      }
+    }
+  }
+}
