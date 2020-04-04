@@ -1,0 +1,28 @@
+.single-blog-content {
+
+  .single-blog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0 8rem;
+    justify-content: space-around;
+
+    p {
+      flex-basis: 95%;
+      line-height: 1.5;
+      color: $textColor;
+      font-size: 1rem;
+    }
+
+    .wp-block-image {
+      flex-basis: 45%;
+      display: flex !important;
+      margin: 2rem 0 0;
+      padding: 0;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

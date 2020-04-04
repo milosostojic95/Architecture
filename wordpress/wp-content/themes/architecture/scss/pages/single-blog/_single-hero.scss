@@ -1,16 +1,22 @@
-.blog-single {
+.single-blog-hero {
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 
-  .single-wrapper {
+  .single-blog-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 
-    .single-title {
-      padding: 15rem 0;
-      background: black;
+    .single-blog-title {
+      padding-top: 25rem;
 
       h1 {
-        font-size: 50px;
-        text-align: center;
-        padding: 2rem 5rem;
+        font-size: 70px;
         color: $headingColor;
+        text-align: center;
+        display: inline-block;
       }
     }
   }

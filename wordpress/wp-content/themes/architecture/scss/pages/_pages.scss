@@ -5,7 +5,11 @@
 @import './blog/heroblog';
 @import './blog/blogitems';
 @import './blog/components/blog-btn';
-@import './blog/blog-single';
+
+//single blog
+@import './single-blog/single-hero';
+@import './single-blog/single-content';
+
 
 //about page
 @import './about/about-hero';

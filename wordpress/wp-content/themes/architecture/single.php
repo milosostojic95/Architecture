@@ -2,14 +2,13 @@
   <section class="single-blog-hero" style="background:url(<?php the_post_thumbnail_url(); ?>);">
     <div class="single-blog-wrapper">
       <div class="single-blog-title">
-        <h3>Hello</h3>
         <h1><?php the_title(); ?></h1>
       </div>
     </div>
   </section>
   <section class="single-blog-content">
     <div class="row">
-      <div class="single-blog-content-wrapper">
+      <div class="single-blog-wrapper">
         <?php while ( have_posts() ) : the_post(); ?>
           <?php the_content();?>
         <?php endwhile; ?>
