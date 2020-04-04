@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="blog-hero">
-  <div class="blog-hero-wrapper">
+  <div class="blog-hero-wrapper flex-center">
     <div class="blog-title">
       <h3>WE STAND FOR</h3>
       <h1>Having an idea. Being inspired.</h1>

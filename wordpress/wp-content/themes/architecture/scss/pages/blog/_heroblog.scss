@@ -5,9 +5,10 @@
   background-image: url('./assets/blog.jpg');
 
   .blog-hero-wrapper {
+    height: 100%;
 
     .blog-title {
-      padding: 15rem 0;
+
 
       h3 {
         color: $headingColor;
