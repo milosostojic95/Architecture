@@ -124,10 +124,11 @@
     display: flex;
     padding: 2rem 0 8rem;
     justify-content: space-between;
+    align-items: baseline;
 
     @include breakpoint(mobile) {
       flex-direction: column;
-      align-items: center;
+
     }
 
     @include breakpoint(smallTablet) {
@@ -139,11 +140,23 @@
       p {
         font-size: .85rem !important;
         color: $textColor;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(smallTablet) {
+          text-align: left;
+        }
       }
     }
 
     .social-link {
       display: flex;
+
+      @include breakpoint(mobile) {
+        justify-content: space-around;
+      }
 
       a {
         padding-right: 12px;
