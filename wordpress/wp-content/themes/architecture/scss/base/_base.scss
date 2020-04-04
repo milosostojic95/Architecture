@@ -27,3 +27,15 @@ p {
 a {
   text-decoration: none !important;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}

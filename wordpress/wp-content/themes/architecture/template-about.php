@@ -6,7 +6,7 @@
 ?>
 <section class="about-hero" style="background:url(<?php the_post_thumbnail_url();?>) !important">
   <div class="row">
-    <div class="about-hero-wrapper">
+    <div class="about-hero-wrapper flex-start">
       <h3>about our employers</h3>
       <h1>
         We are based on collective work

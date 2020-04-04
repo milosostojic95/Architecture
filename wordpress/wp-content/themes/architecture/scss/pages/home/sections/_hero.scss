@@ -34,15 +34,9 @@
   }
 
   .hero-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20rem 0 0;
+    padding: 15rem 0;
 
     .hero-content {
-      display: flex;
-      flex-direction: column;
       z-index: 100;
 
       h3 {
@@ -50,6 +44,22 @@
         text-align: center;
         text-shadow: 1px 1px 6px #000000;
         font-size: 1.5rem;
+
+        @include breakpoint(mobile) {
+          font-size: 4vw;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 2.5vw;
+        }
+
+        @include breakpoint(laptop) {
+          font-size: 2vw;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 1.2vw;
+        }
       }
 
       h1 {
@@ -60,8 +70,20 @@
         margin-top: 2rem;
         text-shadow: 1px 1px 10px #000000;
 
+        @include breakpoint(mobile) {
+          font-size: 7vw;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 4.5vw;
+        }
+
+        @include breakpoint(laptop) {
+          font-size: 3.5vw;
+        }
+
         @include breakpoint(desktop) {
-          font-size: 3vw;
+          font-size: 2.5vw;
         }
       }
 

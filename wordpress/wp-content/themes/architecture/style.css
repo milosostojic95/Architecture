@@ -34,6 +34,30 @@ a {
   text-decoration: none !important;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .site-footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("./assets/footer.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("./assets/footer.jpg");
@@ -72,9 +96,6 @@ a {
 }
 
 .site-footer .top-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 5rem 0 3rem;
 }
 
@@ -158,6 +179,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 1rem;
 }
 
 @media screen and (min-width: 320px) {
@@ -171,6 +193,23 @@ a {
   .site-footer .top-content .right-part-footer {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+}
+
+.site-footer .top-content .right-part-footer h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 320px) {
+  .site-footer .top-content .right-part-footer h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer .top-content .right-part-footer h3 {
+    text-align: right;
   }
 }
 
@@ -391,30 +430,10 @@ a {
 }
 
 .hero .hero-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20rem 0 0;
+  padding: 15rem 0;
 }
 
 .hero .hero-wrapper .hero-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   z-index: 100;
 }
 
@@ -423,6 +442,30 @@ a {
   text-align: center;
   text-shadow: 1px 1px 6px #000000;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .hero .hero-wrapper .hero-content h3 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .hero .hero-wrapper .hero-content h3 {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .hero .hero-wrapper .hero-content h3 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero .hero-wrapper .hero-content h3 {
+    font-size: 1.2vw;
+  }
 }
 
 .hero .hero-wrapper .hero-content h1 {
@@ -434,9 +477,27 @@ a {
   text-shadow: 1px 1px 10px #000000;
 }
 
+@media screen and (min-width: 320px) {
+  .hero .hero-wrapper .hero-content h1 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .hero .hero-wrapper .hero-content h1 {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .hero .hero-wrapper .hero-content h1 {
+    font-size: 3.5vw;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .hero .hero-wrapper .hero-content h1 {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -477,12 +538,7 @@ a {
 }
 
 .about .about-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 8rem 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 980px) {
@@ -496,15 +552,6 @@ a {
   background-image: url("./assets/about.jpg");
   background-position: center center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (min-width: 320px) {
@@ -880,6 +927,7 @@ a {
 
 .hero-btn {
   margin-top: 2rem;
+  text-align: center;
 }
 
 .hero-btn a {
@@ -1049,10 +1097,57 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 320px) {
+  .blog-hero .blog-hero-wrapper .blog-title h3 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .blog-hero .blog-hero-wrapper .blog-title h3 {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .blog-hero .blog-hero-wrapper .blog-title h3 {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog-hero .blog-hero-wrapper .blog-title h3 {
+    font-size: 1.2vw;
+  }
+}
+
 .blog-hero .blog-hero-wrapper .blog-title h1 {
   color: #fff;
-  font-size: 40px;
   text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .blog-hero .blog-hero-wrapper .blog-title h1 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .blog-hero .blog-hero-wrapper .blog-title h1 {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .blog-hero .blog-hero-wrapper .blog-title h1 {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog-hero .blog-hero-wrapper .blog-title h1 {
+    font-size: 2.5vw;
+  }
 }
 
 .blog-content {
@@ -1098,8 +1193,8 @@ a {
 }
 
 .blog-content .blog-content-wrapper .blog-items article .featured-image a img:hover {
-  -webkit-transform: scale(1.1) rotate(3deg);
-          transform: scale(1.1) rotate(3deg);
+  -webkit-transform: scale(1.1) rotate(1deg);
+          transform: scale(1.1) rotate(1deg);
 }
 
 .blog-content .blog-content-wrapper .blog-items article .entry-title {
@@ -1278,19 +1373,6 @@ a {
   .about-hero {
     padding: 0;
   }
-}
-
-.about-hero .about-hero-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .about-hero .about-hero-wrapper h3 {

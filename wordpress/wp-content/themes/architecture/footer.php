@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="row">
-      <div class="top-content">
+      <div class="top-content flex">
         <div class="left-part-footer">
           <div class="site-branding">
             <h1>Dekor</h1>
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="right-part-footer">
-          <p>Get in touch</p>
+          <h3>Get in touch</h3>
           <p>+7 (885) 589 69 85</p>
           <p>prague-architects@info.com</p>
           <p>Litačka, Jungmannova 35/29, Nové Město,Czech Republic</p>

@@ -24,7 +24,6 @@
   }
 
   .top-content {
-    display: flex;
     padding: 5rem 0 3rem;
 
     @include breakpoint(mobile) {
@@ -83,6 +82,7 @@
     .right-part-footer {
       display: flex;
       flex-direction: column;
+      padding-top: 1rem;
 
       @include breakpoint(mobile) {
         flex-basis: 100%;
@@ -90,6 +90,19 @@
 
       @include breakpoint(smallTablet) {
         flex-basis: 50%;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        color: $headingColor;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(smallTablet) {
+          text-align: right;
+        }
       }
 
       p {
