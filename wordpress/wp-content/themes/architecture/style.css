@@ -1171,6 +1171,29 @@ a {
           transform: translateX(0) translateY(3px) rotate(-45deg);
 }
 
+.single-blog-hero {
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.single-blog-hero .single-blog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-blog-hero .single-blog-wrapper .single-blog-title {
+  padding: 15rem 0;
+}
+
 .about-hero {
   background-position: center center;
   background-size: cover;

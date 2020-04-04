@@ -1,0 +1,16 @@
+.single-blog-hero {
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  .single-blog-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .single-blog-title {
+      padding: 15rem 0;
+    }
+  }
+}
