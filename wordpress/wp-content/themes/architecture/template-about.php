@@ -6,7 +6,7 @@
 ?>
 <section class="about-hero" style="background:url(<?php the_post_thumbnail_url();?>) !important">
   <div class="row">
-    <div class="about-hero-wrapper flex-start">
+    <div class="flex-start">
       <h3>about our employers</h3>
       <h1>
         We are based on collective work
@@ -61,6 +61,18 @@
       <h1><?php the_title();?></h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum consectetur optio fugiat id qui nemo ducimus? Tempore, accusamus animi, dolor consectetur quasi optio molestiae expedita quae dolorem repudiandae, dolores minus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum at, harum eligendi sed nobis voluptate nisi corporis blanditiis magnam earum vel tempore delectus neque maiores adipisci, ut odio itaque!</p>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita veritatis nostrum, fugiat non eligendi autem quos vitae doloribus in quia perferendis ipsum? Quidem, cupiditate nulla? Molestiae reprehenderit veritatis accusantium odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptates quasi impedit accusantium labore laboriosam ab quidem veniam quas nisi repellat expedita asperiores reiciendis est ut enim, voluptatibus minus molestias.</p>
+    </div>
+  </div>
+</section>
+<section class="work-process">
+  <div class="row">
+    <h1>How we works with clients.</h1>
+    <div class="process-item">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/proc1.jpg" alt="">
+      <h3>01</h3>
+      <h1>Approach</h1>
+      <p>Our design approach is rooted in research, the creative testing of ideas, and a singular focus in execution. We believe that creating memorable and usable spaces is a process of discovery, iteration and constant curiosity. The context of a project in its widest sense is important to us. Our curiosity leads us to explore the broad circumstances around each project in the search for insight and inspiration. This process is enriched by connecting a project to wider references of material culture, science, technology, art and landscape.
+      By actively resisting preconceptions, we are able to tap into a spectrum of information that continually informs and inspires the design process. This is complemented by our communicative attitude and a disciplined project management to ensure projects are realised within planned budgets and timelines.</p>
     </div>
   </div>
 </section>

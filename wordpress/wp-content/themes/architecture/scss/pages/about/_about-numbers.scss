@@ -81,8 +81,6 @@
     }
 
     .right-part-numbers {
-      flex-basis: 60%;
-
 
       @include breakpoint(mobile) {
         flex-basis: 100%;

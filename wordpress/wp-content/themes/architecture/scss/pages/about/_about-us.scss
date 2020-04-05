@@ -30,12 +30,14 @@
     h1 {
       font-size: 3rem;
       color: $sectionHeadingColor;
+      text-align: center;
     }
 
     p {
       line-height: 1.5;
       color: $textColor;
       font-size: 1rem;
+      text-align: center;
     }
   }
 }
