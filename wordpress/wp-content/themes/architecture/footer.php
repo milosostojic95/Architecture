@@ -10,12 +10,9 @@
  */
 
 ?>
-
-	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer">
 		<div class="row">
-      <div class="top-content flex">
+      <div class="columns">
         <div class="left-part-footer">
           <div class="site-branding">
             <h1>Dekor</h1>

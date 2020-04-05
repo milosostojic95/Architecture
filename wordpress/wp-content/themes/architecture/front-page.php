@@ -18,7 +18,7 @@
   </section>
   <section class="about">
     <div class="row">
-      <div class="about-wrapper flex">
+      <div class="columns">
         <div class="left-part-about flex-center">
           <div class="about-title">
             <h1>20</h1>
@@ -39,12 +39,12 @@
   </section>
   <section class="projects only-lg">
     <div class="row">
-      <div class="projects-wrapper">
-        <div class="projects-title">
-          <h2>Last Projects</h2>
-          <h1>Make it with passion.</h1>
-        </div>
+      <div class="projects-title">
+        <h2>Last Projects</h2>
+        <h1>Make it with passion.</h1>
+      </div>
         <!-- project 1 -->
+      <div class="columns">
         <div class="project">
           <div class="left-part-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/hero.jpg" alt="">
@@ -64,7 +64,9 @@
             </div>
           </div>
         </div>
+      </div>
         <!-- project 2 -->
+      <div class="columns">
         <div class="project only-lg">
           <div class="left-part-content">
             <h3>2010</h3>
@@ -103,7 +105,9 @@
               </div>
             </div>
         </div>
+      </div>
         <!-- project 3 -->
+      <div class="columns">
         <div class="project">
           <div class="left-part-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/project3.jpg" alt="">

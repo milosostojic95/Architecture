@@ -1,115 +1,107 @@
 .about {
 
   @include breakpoint(mobile) {
-    padding: 0 2rem;
+    padding: 3rem 2rem 5rem;
   }
 
   @include breakpoint(smallTablet) {
-    padding: 0 3rem;
+    padding: 5rem 3rem 8rem;
   }
 
   @include breakpoint(tablet) {
-    padding: 0 5rem;
+    padding: 3rem 5rem 8rem;
   }
 
   @include breakpoint(laptop) {
-    padding: 0 5rem;
+    padding: 3rem 5rem 8rem;
   }
 
   @include breakpoint(desktop) {
-    padding: 0;
+    padding: 5rem 0 8rem;
   }
 
-  .about-wrapper {
-    padding: 8rem 0;
+  .left-part-about {
+    background-image: url('./assets/about.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    @include breakpoint(mobile) {
+      flex-basis: 100%;
+      padding: 2rem 0;
+    }
 
     @include breakpoint(tablet) {
-      flex-wrap: nowrap;
+      flex-basis: 35%;
     }
 
-    .left-part-about {
-      background-image: url('./assets/about.jpg');
-      background-position: center center;
-      background-size: cover;
-
-      @include breakpoint(mobile) {
-        flex-basis: 100%;
-        padding: 2rem 0;
-      }
-
-      @include breakpoint(tablet) {
-        flex-basis: 35%;
-      }
-
-      .about-title {
-        border: 13px solid $borderColor;
-        padding: 1rem;
-
-        h1 {
-          font-size: 120px;
-          font-weight: bolder;
-          text-align: center;
-        }
-
-        p {
-          font-size: 1.3rem;
-          font-weight: bold;
-        }
-      }
-    }
-
-    .right-part-about {
-
-      @include breakpoint(mobile) {
-        flex-basis: 100%;
-        padding: 2rem 0 0 0;
-      }
-
-      @include breakpoint(tablet) {
-        flex-basis: 65%;
-        padding-left: 2rem;
-      }
-
-      h2 {
-        font-size: 1.3rem;
-        text-transform: uppercase;
-
-        @include breakpoint(mobile) {
-          text-align: center;
-        }
-
-        @include breakpoint(tablet) {
-          text-align: left;
-        }
-      }
+    .about-title {
+      border: 13px solid $borderColor;
+      padding: 1rem;
 
       h1 {
-        font-size: 40px;
-        color: $sectionHeadingColor;
-        font-weight: bold;
-        padding: 1rem 0;
-
-        @include breakpoint(mobile) {
-          text-align: center;
-        }
-
-        @include breakpoint(tablet) {
-          text-align: left;
-        }
+        font-size: 120px;
+        font-weight: bolder;
+        text-align: center;
       }
 
       p {
-        line-height: 1.5;
-        color: $textColor;
-        padding-bottom: 2rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+  }
 
-        @include breakpoint(mobile) {
-          text-align: center;
-        }
+  .right-part-about {
 
-        @include breakpoint(tablet) {
-          text-align: left;
-        }
+    @include breakpoint(mobile) {
+      flex-basis: 100%;
+      padding: 2rem 0 0 0;
+    }
+
+    @include breakpoint(tablet) {
+      flex-basis: 60%;
+      padding-left: 5%;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+
+      @include breakpoint(tablet) {
+        text-align: left;
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+      color: $sectionHeadingColor;
+      font-weight: bold;
+      padding: 1rem 0;
+
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+
+      @include breakpoint(tablet) {
+        text-align: left;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+      color: $textColor;
+      padding-bottom: 2rem;
+
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+
+      @include breakpoint(tablet) {
+        text-align: left;
       }
     }
   }

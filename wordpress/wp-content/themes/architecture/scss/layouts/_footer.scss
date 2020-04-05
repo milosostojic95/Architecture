@@ -4,142 +4,41 @@
   background-size: cover;
 
   @include breakpoint(mobile) {
-    padding: 0 2rem;
+    padding: 3rem 2rem 5rem;
   }
 
   @include breakpoint(smallTablet) {
-    padding: 0 3rem;
+    padding: 5rem 3rem 8rem;
   }
 
   @include breakpoint(tablet) {
-    padding: 0 5rem;
+    padding: 3rem 5rem 8rem;
   }
 
   @include breakpoint(laptop) {
-    padding: 0 5rem;
+    padding: 3rem 5rem 8rem;
   }
 
   @include breakpoint(desktop) {
-    padding: 0;
+    padding: 5rem 0 5rem;
   }
 
-  .top-content {
-    padding: 5rem 0 3rem;
-
-    @include breakpoint(mobile) {
-      flex-wrap: wrap;
-    }
-
-    @include breakpoint(smallTablet) {
-      flex-wrap: nowrap;
-    }
-
-    .left-part-footer {
-      display: flex;
-      flex-direction: column;
-
-      @include breakpoint(mobile) {
-        flex-basis: 100%;
-      }
-
-      @include breakpoint(smallTablet) {
-        flex-basis: 50%;
-      }
-
-      .site-branding {
-
-        h1 {
-          color: $headingColor;
-
-          @include breakpoint(mobile) {
-            text-align: center;
-          }
-
-          @include breakpoint(smallTablet) {
-            text-align: left;
-          }
-        }
-      }
-
-      .footer-title {
-
-        p {
-          color: $textColor;
-          line-height: 1.5;
-          font-size: .9rem;
-
-          @include breakpoint(mobile) {
-            text-align: center;
-          }
-
-          @include breakpoint(smallTablet) {
-            text-align: left;
-          }
-        }
-      }
-    }
-
-    .right-part-footer {
-      display: flex;
-      flex-direction: column;
-      padding-top: 1rem;
-
-      @include breakpoint(mobile) {
-        flex-basis: 100%;
-      }
-
-      @include breakpoint(smallTablet) {
-        flex-basis: 50%;
-      }
-
-      h3 {
-        font-size: 1.2rem;
-        color: $headingColor;
-
-        @include breakpoint(mobile) {
-          text-align: center;
-        }
-
-        @include breakpoint(smallTablet) {
-          text-align: right;
-        }
-      }
-
-      p {
-        color: $textColor;
-        font-size: .85rem;
-
-        @include breakpoint(mobile) {
-          text-align: center;
-        }
-
-        @include breakpoint(smallTablet) {
-          text-align: right;
-        }
-      }
-    }
-  }
-
-  .bottom-content {
+  .left-part-footer {
     display: flex;
-    padding: 2rem 0 8rem;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
 
     @include breakpoint(mobile) {
-      flex-direction: column;
-
+      flex-basis: 100%;
     }
 
     @include breakpoint(smallTablet) {
-      flex-direction: row;
+      flex-basis: 50%;
     }
 
-    .copy-right {
+    .site-branding {
 
-      p {
-        font-size: .85rem !important;
-        color: $textColor;
+      h1 {
+        color: $headingColor;
 
         @include breakpoint(mobile) {
           text-align: center;
@@ -151,20 +50,98 @@
       }
     }
 
-    .social-link {
-      display: flex;
+    .footer-title {
+
+      p {
+        color: $textColor;
+        line-height: 1.5;
+        font-size: .9rem;
+
+        @include breakpoint(mobile) {
+          text-align: center;
+        }
+
+        @include breakpoint(smallTablet) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .right-part-footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+    @include breakpoint(mobile) {
+      flex-basis: 100%;
+    }
+
+    @include breakpoint(smallTablet) {
+      flex-basis: 50%;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: $headingColor;
 
       @include breakpoint(mobile) {
-        justify-content: space-around;
+        text-align: center;
       }
 
-      a {
-        padding-right: 12px;
+      @include breakpoint(smallTablet) {
+        text-align: right;
+      }
+    }
 
-        i {
-          color: white;
-          font-size: 1.2rem;
-        }
+    p {
+      color: $textColor;
+      font-size: .85rem;
+
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+
+      @include breakpoint(smallTablet) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.bottom-content {
+  display: flex;
+  padding: 2rem 0 3rem;
+
+
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include breakpoint(smallTablet) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .copy-right {
+
+    p {
+      font-size: .85rem;
+      color: $textColor;
+    }
+  }
+
+  .social-link {
+    display: flex;
+
+    a {
+      padding-right: 12px;
+
+      i {
+        color: white;
+        font-size: 1.2rem;
       }
     }
   }
