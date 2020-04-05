@@ -25,14 +25,7 @@
   }
 
   .service-item {
-
-    @include breakpoint(mobile) {
-      padding: 2rem 0 3rem;
-    }
-
-    @include breakpoint(smallTablet) {
-      padding: 5rem 0 5rem;
-    }
+    padding: 2rem 0 3rem;
 
     h1 {
       font-size: 3rem;

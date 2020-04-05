@@ -1894,16 +1894,8 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .service-items .service-item {
-    padding: 2rem 0 3rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .service-items .service-item {
-    padding: 5rem 0 5rem;
-  }
+.service-items .service-item {
+  padding: 2rem 0 3rem;
 }
 
 .service-items .service-item h1 {
