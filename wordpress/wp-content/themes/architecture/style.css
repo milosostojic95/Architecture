@@ -1115,8 +1115,34 @@ a {
   }
 }
 
-.blog-content {
-  padding: 3rem 0 8rem;
+@media screen and (min-width: 320px) {
+  .blog-content {
+    padding: 3rem 2rem 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog-content {
+    padding: 5rem 3rem 8rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .blog-content {
+    padding: 3rem 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .blog-content {
+    padding: 3rem 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .blog-content {
+    padding: 5rem 0 8rem;
+  }
 }
 
 .blog-content h1 {
@@ -1163,7 +1189,7 @@ a {
 }
 
 .blog-content .blog-content-wrapper .blog-items article .entry-title {
-  padding: .5rem 0 .5rem;
+  padding: 1.5rem 0 0;
 }
 
 .blog-content .blog-content-wrapper .blog-items article .entry-title a {
@@ -1273,13 +1299,42 @@ a {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .single-blog-content {
+    padding: 3rem 2rem 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .single-blog-content {
+    padding: 5rem 3rem 8rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .single-blog-content {
+    padding: 3rem 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .single-blog-content {
+    padding: 3rem 5rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .single-blog-content {
+    padding: 5rem 0 8rem;
+  }
+}
+
 .single-blog-content .single-blog-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 3rem 0 8rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -1293,13 +1348,25 @@ a {
 }
 
 .single-blog-content .single-blog-wrapper .wp-block-image {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   margin: 2rem 0 0;
   padding: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .single-blog-content .single-blog-wrapper .wp-block-image {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .single-blog-content .single-blog-wrapper .wp-block-image {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
 }
 
 .single-blog-content .single-blog-wrapper .wp-block-image img {

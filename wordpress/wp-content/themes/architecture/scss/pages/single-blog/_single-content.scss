@@ -1,9 +1,28 @@
 .single-blog-content {
 
+  @include breakpoint(mobile) {
+    padding: 3rem 2rem 5rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 5rem 3rem 8rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 3rem 5rem 8rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 3rem 5rem 8rem;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 5rem 0 8rem;
+  }
+
   .single-blog-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 0 8rem;
     justify-content: space-around;
 
     p {
@@ -14,10 +33,17 @@
     }
 
     .wp-block-image {
-      flex-basis: 45%;
       display: flex !important;
       margin: 2rem 0 0;
       padding: 0;
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+      }
+
+      @include breakpoint(smallTablet) {
+        flex-basis: 45%;
+      }
 
       img {
         height: 100%;
