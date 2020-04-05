@@ -1,0 +1,48 @@
+.service-items {
+
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 0;
+  }
+
+  .service-item {
+    padding: 5rem 0 5rem;
+
+    h1 {
+      font-size: 3rem;
+      color: $sectionHeadingColor;
+      text-align: left;
+      padding: 1rem 0 2rem;
+    }
+
+    p {
+      color: $textColor;
+      line-height: 1.5;
+      font-size: 1rem;
+     }
+
+     .service-images {
+       display: flex;
+       justify-content: space-around;
+     }
+  }
+}

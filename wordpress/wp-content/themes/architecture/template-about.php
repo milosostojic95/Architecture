@@ -13,7 +13,7 @@
         and shared knowledge
       </h1>
       <div class="hero-btn">
-          <a href="<?php echo site_url('/contact')?>">hire us</a>
+          <a href="http://architecture/?page_id=42">hire us</a>
         </div>
     </div>
   </div>
