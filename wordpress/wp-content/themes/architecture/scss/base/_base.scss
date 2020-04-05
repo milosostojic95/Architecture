@@ -89,3 +89,15 @@ a {
   }
 }
 
+.section-heading {
+  font-size: 3rem;
+  color: $sectionHeadingColor;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.section-small-heading {
+  color: $sectionHeadingColor;
+  font-size: 1.3rem;
+}
+

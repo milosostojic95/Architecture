@@ -24,14 +24,6 @@
     padding: 0;
   }
 
-
-  h1 {
-    font-size: 3rem;
-    color: $sectionHeadingColor;
-    padding: 3rem 0;
-    text-align: center;
-  }
-
   .process-item {
     padding: 3rem 5rem;
 
@@ -53,13 +45,6 @@
       color: $sectionHeadingColor;
       font-weight: bold;
       padding-top: 1rem;
-    }
-
-    h1 {
-      text-align: center;
-      color: $sectionHeadingColor;
-      line-height: 1;
-      padding: 1rem 0;
     }
 
     p {

@@ -6,32 +6,5 @@
 
   .single-blog-wrapper {
     height: 100%;
-
-    .single-blog-title {
-
-      h1 {
-        color: $headingColor;
-        text-align: center;
-        display: inline-block;
-        text-shadow: 1px 1px 10px #000000;
-
-
-        @include breakpoint(mobile) {
-          font-size: 7vw;
-        }
-
-        @include breakpoint(tablet) {
-          font-size: 4.5vw;
-        }
-
-        @include breakpoint(laptop) {
-          font-size: 3.5vw;
-        }
-
-        @include breakpoint(desktop) {
-          font-size: 2.5vw;
-        }
-      }
-    }
   }
 }

@@ -13,7 +13,7 @@
 <section class="service-items">
   <div class="row">
     <div class="service-item">
-      <h1>Architectural planning</h1>
+      <h1 class="section-heading">Architectural planning</h1>
       <p>
         The architect usually begins to work when the site and the type and cost of a building have been determined.
       </p>
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="service-item">
-      <h1>Planning the environment</h1>
+      <h1 class="section-heading">Planning the environment</h1>
       <p>
         The natural environment is at once a hindrance and a help, and the architect seeks both to invite its aid and to repel its attacks. To make buildings habitable and comfortable, he must control the effects of heat, cold, light, air, moisture, and dryness and foresee destructive potentialities such as fire, earthquake, flood, and disease.
       </p>
@@ -38,7 +38,7 @@
       </p>
     </div>
     <div class="service-item">
-      <h1>Orientation</h1>
+      <h1 class="section-heading">Orientation</h1>
       <p>
         The arrangement of the axes of buildings and their parts is a device for controlling the effects of sun, wind, and rainfall. The sun is regular in its course; it favours the southern and neglects the northern exposures of buildings in the Northern Hemisphere, so that it may be captured for heat or evaded for coolness by turning the axis of a plan toward or away from it. Within buildings, the axis and placement of each space determines the amount of sun it receives. Orientation may control air for circulation and reduce the disadvantages of wind, rain, and snow, since in most climates the prevailing currents can be foreseen. The characteristics of the immediate environment also influence orientation: trees, land formations, and other buildings create shade and reduce or intensify wind, while bodies of water produce moisture and reflect the sun.
       </p>

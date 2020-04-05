@@ -2,7 +2,7 @@
   <section class="single-blog-hero" style="background:url(<?php the_post_thumbnail_url(); ?>);">
     <div class="single-blog-wrapper flex-center">
       <div class="single-blog-title">
-        <h1><?php the_title(); ?></h1>
+        <h1 class="main-heading"><?php the_title(); ?></h1>
       </div>
     </div>
   </section>

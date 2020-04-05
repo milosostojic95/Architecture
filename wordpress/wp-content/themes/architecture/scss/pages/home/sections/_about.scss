@@ -64,8 +64,6 @@
     }
 
     h2 {
-      font-size: 1.3rem;
-      text-transform: uppercase;
 
       @include breakpoint(mobile) {
         text-align: center;
@@ -77,10 +75,6 @@
     }
 
     h1 {
-      font-size: 40px;
-      color: $sectionHeadingColor;
-      font-weight: bold;
-      padding: 1rem 0;
 
       @include breakpoint(mobile) {
         text-align: center;

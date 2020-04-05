@@ -4,10 +4,9 @@
 */
 
 @import './scss/variables/variables';
+@import './scss/mixins/breakpoints';
 @import './scss/base/base';
 
-//mixins
-@import './scss/mixins/breakpoints';
 
 //layouts
 @import './scss/layouts/footer';

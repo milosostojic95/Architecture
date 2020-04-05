@@ -28,9 +28,6 @@
     padding: 2rem 0 3rem;
 
     h1 {
-      font-size: 3rem;
-      color: $sectionHeadingColor;
-      text-align: left;
       padding: 1rem 0 2rem;
 
       @include breakpoint(mobile) {

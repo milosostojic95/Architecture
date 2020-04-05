@@ -26,8 +26,8 @@
           </div>
         </div>
         <div class="right-part-about">
-          <h2>About Us</h2>
-          <h1>
+          <h2 class="section-small-heading">About Us</h2>
+          <h1 class="section-heading">
             Break out of your routine with
             a global perspective.
           </h1>
@@ -40,8 +40,8 @@
   <section class="projects only-lg">
     <div class="row">
       <div class="projects-title">
-        <h2>Last Projects</h2>
-        <h1>Make it with passion.</h1>
+        <h2 class="section-small-heading">Last Projects</h2>
+        <h1 class="section-heading">Make it with passion.</h1>
       </div>
         <!-- project 1 -->
       <div class="columns">
