@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <section class="hero" style="background: url(<?php the_post_thumbnail_url(); ?>) !important; background-position:center center !important; background-size:cover !important;">
+  <section class="hero" style="background: url(<?php the_post_thumbnail_url(); ?>);">
     <div class="row">
       <div class="overlay"></div>
       <div class="hero-wrapper flex-center">
