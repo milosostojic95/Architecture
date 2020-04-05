@@ -25,24 +25,55 @@
   }
 
   .service-item {
-    padding: 5rem 0 5rem;
+
+    @include breakpoint(mobile) {
+      padding: 2rem 0 3rem;
+    }
+
+    @include breakpoint(smallTablet) {
+      padding: 5rem 0 5rem;
+    }
 
     h1 {
       font-size: 3rem;
       color: $sectionHeadingColor;
       text-align: left;
       padding: 1rem 0 2rem;
+
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+
+      @include breakpoint(smallTablet) {
+        text-align: left;
+      }
     }
 
     p {
       color: $textColor;
       line-height: 1.5;
       font-size: 1rem;
+
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+
+      @include breakpoint(smallTablet) {
+        text-align: left;
+      }
      }
 
      .service-images {
        display: flex;
        justify-content: space-around;
-     }
+
+      @include breakpoint(mobile) {
+        flex-direction: column;
+      }
+
+      @include breakpoint(smallTablet) {
+        flex-direction: row;
+      }
+    }
   }
 }
