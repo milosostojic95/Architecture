@@ -4,11 +4,11 @@
   */
   get_header();
 ?>
-<section class="about-hero" style="background:url(<?php the_post_thumbnail_url();?>) !important">
+<section class="about-hero" style="background:url(<?php the_post_thumbnail_url();?>);">
   <div class="row">
     <div class="flex-start">
-      <h3>about our employers</h3>
-      <h1>
+      <h3 class="small-heading">about our employers</h3>
+      <h1 class="main-heading">
         We are based on collective work
         and shared knowledge
       </h1>

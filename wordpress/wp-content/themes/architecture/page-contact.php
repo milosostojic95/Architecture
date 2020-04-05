@@ -8,8 +8,8 @@
   <div class="row">
     <div class="contact-hero-wrapper">
       <div class="contact-hero-title">
-        <h3><?php the_title();?></h3>
-        <h1>Let's establish relations</h1>
+        <h3 class="small-heading"><?php the_title();?></h3>
+        <h1 class="main-heading">Let's establish relations</h1>
       </div>
     </div>
   </div>

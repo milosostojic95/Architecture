@@ -4,8 +4,8 @@
       <div class="overlay"></div>
       <div class="hero-wrapper flex-center">
         <div class="hero-content">
-          <h3>Cacak, Serbia</h3>
-          <h1>Awesome Design for the Vorokhta Hub</h1>
+          <h3 class="small-heading">Cacak, Serbia</h3>
+          <h1 class="main-heading">Awesome Design for the Vorokhta Hub</h1>
           <p>
             The main objective of the project – transformation of Vorokhta City in innovative <br> SMART CITY (village) and tourist center.
           </p>

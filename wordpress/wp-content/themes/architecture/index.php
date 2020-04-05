@@ -2,8 +2,8 @@
 <section class="blog-hero">
   <div class="blog-hero-wrapper flex-center">
     <div class="blog-title">
-      <h3>WE STAND FOR</h3>
-      <h1>Having an idea. Being inspired.</h1>
+      <h3 class="small-heading">WE STAND FOR</h3>
+      <h1 class="main-heading">Having an idea. Being inspired.</h1>
     </div>
   </div>
 </section>
