@@ -1,5 +1,30 @@
 .work-process {
 
+  @include breakpoint(mobile) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(smallTablet) {
+    padding: 0 3rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(laptop) {
+    padding: 0 5rem;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 0;
+  }
+
+
   h1 {
     font-size: 3rem;
     color: $sectionHeadingColor;
@@ -8,12 +33,19 @@
   }
 
   .process-item {
+    padding: 3rem 5rem;
 
     img {
-      width: 60%;
       margin: 0 auto;
-      height: 100%;
       display: block;
+
+      @include breakpoint(mobile) {
+        width: 100%;
+      }
+
+      @include breakpoint(tablet) {
+        width: 70%;
+      }
     }
 
     h3 {
