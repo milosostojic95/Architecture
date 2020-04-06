@@ -411,7 +411,15 @@ a {
 }
 
 .site-header .header-wrapper .main-navigation .menu-toggle {
-  display: none;
+  height: 50px;
+  width: 50px;
+}
+
+.site-header .header-wrapper .main-navigation .menu-toggle span {
+  width: 100%;
+  background-color: red;
+  height: 2px;
+  padding: 5px 1px;
 }
 
 .site-header .header-wrapper .main-navigation .nav-menu {
@@ -1565,12 +1573,6 @@ a {
 
 .about-us .about-us-wrapper {
   padding: 2rem 0 8rem;
-}
-
-.about-us .about-us-wrapper h1 {
-  font-size: 3rem;
-  color: #000;
-  text-align: center;
 }
 
 .about-us .about-us-wrapper p {

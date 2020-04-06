@@ -38,16 +38,17 @@
 
     .main-navigation {
 
-      @include breakpoint(mobile) {
-        display: none;
-      }
-
-      @include breakpoint(tablet) {
-        display: block;
-      }
-
       .menu-toggle {
-        display: none;
+        height: 50px;
+        width: 50px;
+        background: transparent;
+
+        span {
+          width: 100%;
+          background-color: red;
+          height: 2px;
+          padding: 5px 1px;
+        }
       }
 
       .nav-menu {
@@ -79,6 +80,17 @@
             font-weight: normal;
             color: $headingColor;
           }
+        }
+      }
+
+      .menu {
+
+        @include breakpoint(mobile) {
+          display: none;
+        }
+
+        @include breakpoint(smallTablet) {
+          display: block;
         }
       }
     }
