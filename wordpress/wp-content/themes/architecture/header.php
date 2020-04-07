@@ -19,8 +19,12 @@
 
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
+<div class="preloader">
+  <div class="preloader-content">
+    <h1>dekor</h1>
+  </div>
+</div>
 <?php wp_body_open(); ?>
 	<header id="masthead" class="site-header">
     <div class="row">

@@ -101,3 +101,58 @@ a {
   font-size: 1.3rem;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 600;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .preloader-content {
+    background-color: black;
+    position: relative;
+    animation: reveal .3s ease-in-out forwards;
+    transform-origin: left;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 101%;
+      background: white;
+      z-index: 1;
+      animation: reveal .3s reverse forwards;
+      transform-origin: right;
+      animation-delay: .3s;
+
+      @keyframes reveal {
+        0% {
+          transform: scaleX(0)
+        }
+
+        100% {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    h1 {
+      color: white;
+      padding: 3rem 8rem;
+    }
+  }
+}
+
+.loader-finish {
+  opacity: 0;
+  transition: .3s ease-in;
+  pointer-events: none;
+}
+

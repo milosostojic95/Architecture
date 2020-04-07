@@ -138,6 +138,84 @@ a {
   font-size: 1.3rem;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 600;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preloader .preloader-content {
+  background-color: black;
+  position: relative;
+  -webkit-animation: reveal .3s ease-in-out forwards;
+          animation: reveal .3s ease-in-out forwards;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.preloader .preloader-content::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 101%;
+  background: white;
+  z-index: 1;
+  animation: reveal .3s reverse forwards;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+.preloader .preloader-content h1 {
+  color: white;
+  padding: 3rem 8rem;
+}
+
+.loader-finish {
+  opacity: 0;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  pointer-events: none;
+}
+
 .site-footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("./assets/footer.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("./assets/footer.jpg");
