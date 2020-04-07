@@ -42,48 +42,31 @@
         height: 50px;
         width: 50px;
         background: transparent;
+        border: none;
+        z-index: 100;
+
+        @include breakpoint(mobile) {
+          display: block;
+        }
+
+        @include breakpoint(smallTablet) {
+          display: none;
+        }
 
         span {
           width: 100%;
-          background-color: red;
+          background-color: $borderColor;
           height: 2px;
-          padding: 5px 1px;
-        }
-      }
+          margin: 1px 0px;
+          display: inline-block;
 
-      .nav-menu {
-        display: flex;
-        list-style: none;
-
-        .menu-item {
-          position: relative;
-          padding: .8rem 1rem .8rem 0;
-
-          &:hover::after {
-            width: 80%;
-            transition: .3s ease-in-out;
-          }
-
-          &::after {
-            content: '';
-            width: 0;
-            height: 2px;
-            background-color: white;
-            position: absolute;
-            bottom: 5px;
-            left: 0;
-          }
-
-          a {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: normal;
-            color: $headingColor;
+          &:nth-child(2) {
+            width: 70%;
           }
         }
       }
 
-      .menu {
+      .menu-top-menu-container {
 
         @include breakpoint(mobile) {
           display: none;
@@ -91,6 +74,44 @@
 
         @include breakpoint(smallTablet) {
           display: block;
+        }
+
+        .nav-menu {
+          display: flex;
+          list-style: none;
+
+          @include breakpoint(mobile) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .menu-item {
+            position: relative;
+            padding: .8rem 1rem .8rem 0;
+
+            &:hover::after {
+              width: 80%;
+              transition: .3s ease-in-out;
+            }
+
+            &::after {
+              content: '';
+              width: 0;
+              height: 2px;
+              background-color: white;
+              position: absolute;
+              bottom: 5px;
+              left: 0;
+            }
+
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              font-weight: normal;
+              color: $headingColor;
+            }
+          }
         }
       }
     }

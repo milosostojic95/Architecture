@@ -10,3 +10,20 @@ addEventListener('scroll', () =>{
     navBg.style.background = 'transparent';
   }
 });
+
+// menu trigger
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.menu-top-menu-container');
+
+
+menuToggle.addEventListener('click', () => {
+  const getElementCss = window.getComputedStyle(nav);
+  const elementDisplay = getElementCss.getPropertyValue('display');
+
+  if(elementDisplay === 'none') {
+    nav.style.display = 'block';
+  }
+  else if(elementDisplay === 'block') {
+    nav.style.display = 'none';
+  }
+});

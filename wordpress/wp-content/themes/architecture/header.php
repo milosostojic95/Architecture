@@ -30,7 +30,7 @@
         </div>
         <!-- ==================================================#site-navigation -->
         <nav id="site-navigation" class="main-navigation">
-          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'architecture' ); ?>
+          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
