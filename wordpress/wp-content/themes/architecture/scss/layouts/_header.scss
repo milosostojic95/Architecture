@@ -36,59 +36,70 @@
       }
     }
 
+    .menu-toggle {
+      width: 50px;
+      background: transparent;
+      border: none;
+      z-index: 500;
+
+      @include breakpoint(mobile) {
+        display: block;
+      }
+
+      @include breakpoint(smallTablet) {
+        display: none;
+      }
+
+      span {
+        width: 100%;
+        background-color: $borderColor;
+        height: 2px;
+        margin: 1px 0px;
+        display: inline-block;
+
+        &:nth-child(2) {
+          width: 70%;
+        }
+      }
+    }
+
     .main-navigation {
 
-      .menu-toggle {
-        height: 50px;
-        width: 50px;
-        background: transparent;
-        border: none;
-        z-index: 100;
+      @include breakpoint(mobile) {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+      }
 
-        @include breakpoint(mobile) {
-          display: block;
-        }
-
-        @include breakpoint(smallTablet) {
-          display: none;
-        }
-
-        span {
-          width: 100%;
-          background-color: $borderColor;
-          height: 2px;
-          margin: 1px 0px;
-          display: inline-block;
-
-          &:nth-child(2) {
-            width: 70%;
-          }
-        }
+      @include breakpoint(smallTablet) {
+        display: block;
       }
 
       .menu-top-menu-container {
-
-        @include breakpoint(mobile) {
-          display: none;
-        }
-
-        @include breakpoint(smallTablet) {
-          display: block;
-        }
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .nav-menu {
           display: flex;
           list-style: none;
 
-          @include breakpoint(mobile) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
           .menu-item {
             position: relative;
-            padding: .8rem 1rem .8rem 0;
+
+            @include breakpoint(mobile) {
+              padding: 5rem 0;
+            }
+
+            @include breakpoint(smallTablet) {
+              padding: .8rem 1rem .8rem 0;
+            }
 
             &:hover::after {
               width: 80%;
@@ -117,3 +128,4 @@
     }
   }
 }
+

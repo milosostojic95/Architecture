@@ -29,19 +29,18 @@
           <h1>Dekor</h1>
         </div>
         <!-- ==================================================#site-navigation -->
+        <button class="menu-toggle" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <nav id="site-navigation" class="main-navigation">
-          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-            <?php
-              wp_nav_menu(
-                array(
-                  'theme_location' => 'top-menu',
-                  'menu_id' => 'primary-menu',
-                )
-            )?>
+          <?php
+            wp_nav_menu(
+              array(
+                'theme_location' => 'top-menu',
+              )
+          )?>
         </nav>
       </div>
     </div>

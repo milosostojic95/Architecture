@@ -13,7 +13,7 @@ addEventListener('scroll', () =>{
 
 // menu trigger
 const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.menu-top-menu-container');
+const nav = document.querySelector('.main-navigation');
 
 
 menuToggle.addEventListener('click', () => {
