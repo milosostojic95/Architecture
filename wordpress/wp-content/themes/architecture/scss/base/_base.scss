@@ -116,7 +116,7 @@ a {
   .preloader-content {
     background-color: black;
     position: relative;
-    animation: reveal .3s ease-in-out forwards;
+    animation: reveal .5s ease-in-out forwards;
     transform-origin: left;
 
     &::before {
@@ -128,9 +128,9 @@ a {
       width: 101%;
       background: white;
       z-index: 1;
-      animation: reveal .3s reverse forwards;
+      animation: reveal .5s reverse forwards;
       transform-origin: right;
-      animation-delay: .3s;
+      animation-delay: .5s;
 
       @keyframes reveal {
         0% {
@@ -152,7 +152,7 @@ a {
 
 .loader-finish {
   opacity: 0;
-  transition: .3s ease-in;
+  transition: 1.5s ease-in-out;
   pointer-events: none;
 }
 

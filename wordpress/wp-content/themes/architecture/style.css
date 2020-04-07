@@ -160,8 +160,8 @@ a {
 .preloader .preloader-content {
   background-color: black;
   position: relative;
-  -webkit-animation: reveal .3s ease-in-out forwards;
-          animation: reveal .3s ease-in-out forwards;
+  -webkit-animation: reveal .5s ease-in-out forwards;
+          animation: reveal .5s ease-in-out forwards;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
@@ -175,11 +175,11 @@ a {
   width: 101%;
   background: white;
   z-index: 1;
-  animation: reveal .3s reverse forwards;
+  animation: reveal .5s reverse forwards;
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 @-webkit-keyframes reveal {
@@ -211,8 +211,8 @@ a {
 
 .loader-finish {
   opacity: 0;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
   pointer-events: none;
 }
 

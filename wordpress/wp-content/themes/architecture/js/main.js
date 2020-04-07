@@ -31,5 +31,5 @@ menuToggle.addEventListener('click', () => {
 // preloader
 window.addEventListener('load',() =>{
   const preloader = document.querySelector('.preloader');
-  preloader.classList.add('loader-finish');
+  preloader.classList.add('loader-finish')
 });
