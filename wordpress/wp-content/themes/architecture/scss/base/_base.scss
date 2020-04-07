@@ -116,19 +116,19 @@ a {
   .preloader-content {
     background-color: black;
     position: relative;
-    animation: reveal .5s ease-in-out forwards;
+    animation: reveal .2s ease-in-out forwards;
     transform-origin: left;
 
     &::before {
       position: absolute;
-      content: '';
+      content: 'Dekor';
       top: 0;
       left: 0;
       height: 100%;
       width: 101%;
       background: white;
       z-index: 1;
-      animation: reveal .5s reverse forwards;
+      animation: reveal .2s reverse forwards;
       transform-origin: right;
       animation-delay: .5s;
 
@@ -152,7 +152,7 @@ a {
 
 .loader-finish {
   opacity: 0;
-  transition: 1.5s ease-in-out;
+  animation: .4s ease-in-out;
   pointer-events: none;
 }
 
