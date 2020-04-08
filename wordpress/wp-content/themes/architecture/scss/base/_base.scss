@@ -116,21 +116,21 @@ a {
   .preloader-content {
     background-color: black;
     position: relative;
-    animation: reveal .2s ease-in-out forwards;
+    animation: reveal .7s ease-in-out forwards;
     transform-origin: left;
 
     &::before {
       position: absolute;
-      content: 'Dekor';
+      content: '';
       top: 0;
       left: 0;
       height: 100%;
       width: 101%;
       background: white;
       z-index: 1;
-      animation: reveal .2s reverse forwards;
+      animation: reveal .7s reverse forwards;
       transform-origin: right;
-      animation-delay: .5s;
+      animation-delay: 1s;
 
       @keyframes reveal {
         0% {
@@ -152,7 +152,7 @@ a {
 
 .loader-finish {
   opacity: 0;
-  animation: .4s ease-in-out;
+  animation: .5s ease-in-out;
   pointer-events: none;
 }
 

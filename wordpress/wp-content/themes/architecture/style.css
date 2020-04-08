@@ -160,26 +160,26 @@ a {
 .preloader .preloader-content {
   background-color: black;
   position: relative;
-  -webkit-animation: reveal .2s ease-in-out forwards;
-          animation: reveal .2s ease-in-out forwards;
+  -webkit-animation: reveal .7s ease-in-out forwards;
+          animation: reveal .7s ease-in-out forwards;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
 .preloader .preloader-content::before {
   position: absolute;
-  content: 'Dekor';
+  content: '';
   top: 0;
   left: 0;
   height: 100%;
   width: 101%;
   background: white;
   z-index: 1;
-  animation: reveal .2s reverse forwards;
+  animation: reveal .7s reverse forwards;
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 @-webkit-keyframes reveal {
@@ -211,8 +211,8 @@ a {
 
 .loader-finish {
   opacity: 0;
-  -webkit-animation: .4s ease-in-out;
-          animation: .4s ease-in-out;
+  -webkit-animation: .5s ease-in-out;
+          animation: .5s ease-in-out;
   pointer-events: none;
 }
 
@@ -2044,15 +2044,6 @@ a {
 
 .project-hero .project-hero-wrapper .project-hero-title {
   padding: 15rem 0;
-}
-
-.gallery-content {
-  padding: 5rem 0 8rem;
-}
-
-.gallery-content .image-item {
-  height: 400px;
-  cursor: pointer;
 }
 
 .gallery-hero {

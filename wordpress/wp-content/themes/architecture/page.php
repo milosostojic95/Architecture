@@ -20,32 +20,10 @@
   </div>
 </section>
 <section class="gallery">
-    <div class="row">
-      <h1>Galerija</h1>
-      <div class="gallery-wrapper">
-        <div class="gallery-item img1">
-          <div class="gallery-title"><a href="#">title</a></div>
-        </div>
-        <div class="gallery-item img2">
-          <div class="gallery-title"><a href="#">title</a></div>
-        </div>
-        <div class="gallery-item img3">
-          <div class="gallery-title"><a href="#">title</a></div>
-        </div>
-        <div class="gallery-item img4">
-          <div class="gallery-title"><a href="#">title</a></div>
-        </div>
-        <div class="gallery-item img5">
-          <div class="gallery-title"><a href="#">title</a></div>
-        </div>
-        <div class="gallery-item img6">
-          <div class="gallery-title"><a href="#">title</a></div>
-        </div>
-        <div class="gallery-item img7">
-          <div class="gallery-title"><a href="#">title</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php if(have_posts()) : ?>
+    <?php while(have_posts()) : the_post();?>
+      <?php the_content(); ?>
+    <?php endwhile;?>
+  <?php endif; ?>
 </section>
 <?php get_footer(); ?>
