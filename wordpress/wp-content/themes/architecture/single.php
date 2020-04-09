@@ -11,6 +11,8 @@
       <div class="single-blog-wrapper">
         <?php while ( have_posts() ) : the_post(); ?>
           <?php the_content();?>
+          <div class="text-left"><?php previous_post_link();?></div>
+          <div class="text-right"><?php next_post_link();?></div>
         <?php endwhile; ?>
       </div>
     </div>

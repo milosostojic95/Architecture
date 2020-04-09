@@ -16,7 +16,7 @@ body {
 
 a {
   font-family: "Orkney", sans-serif;
-  color: #fff;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,10 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Orkney", sans-serif;
   font-weight: normal;
-}
-
-a {
-  text-decoration: none !important;
 }
 
 .flex-center {
@@ -598,7 +594,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: normal;
-  color: #fff;
+  color: #969696;
 }
 
 .hero {
@@ -1043,6 +1039,7 @@ a {
   text-transform: uppercase;
   font-size: .8rem;
   letter-spacing: 2px;
+  color: #fff;
 }
 
 .hero-btn a:hover {
@@ -1981,16 +1978,6 @@ a {
 .contact-form .contact-wrapper .right-part-contact {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-}
-
-.project-hero {
-  background-image: url("./assets/contact.jpg");
-  background-position: center center !important;
-  background-size: cover !important;
-}
-
-.project-hero .project-hero-wrapper .project-hero-title {
-  padding: 15rem 0;
 }
 
 .gallery-hero {

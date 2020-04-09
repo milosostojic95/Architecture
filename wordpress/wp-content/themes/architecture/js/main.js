@@ -5,7 +5,7 @@
 const navBg = document.querySelector('.site-header');
 addEventListener('scroll', () =>{
   if(scrollY > 100) {
-    navBg.style.background = 'black';
+    navBg.style.background = '#0a0a0a';
   } else {
     navBg.style.background = 'transparent';
   }
