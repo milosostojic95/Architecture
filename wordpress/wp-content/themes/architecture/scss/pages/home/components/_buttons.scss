@@ -48,59 +48,9 @@
   }
 }
 
-.project-btn-right {
-  padding-top: 2rem;
-
-  a {
-    font-size: .95rem;
-    text-transform: uppercase;
-    color: $sectionHeadingColor;
-    position: relative;
-
-    &:hover .right-arrow {
-      right: -60px;
-    }
-
-    .right-arrow {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      margin-top: -1px;
-      right: -49px;
-      width: 31px;
-      height: 1px;
-      -webkit-transition: right .3s ease-in;
-      transition: right .3s ease-in;
-      background-color: #111;
-
-      &::before {
-        position: absolute;
-        display: block;
-        right: 0px;
-        width: 6px;
-        height: 1px;
-        content: '';
-        background-color: #111;
-        transform: translateX(0) translateY(-3px) rotate(45deg);
-      }
-
-      &::after {
-        position: absolute;
-        display: block;
-        right: 0px;
-        width: 6px;
-        height: 1px;
-        content: '';
-        background-color: #111;
-        transform: translateX(0) translateY(3px) rotate(-45deg);
-      }
-    }
-  }
-}
-
 .project-btn-left {
   padding: 2rem 4rem 0 0;
-  float: right;
+  float: left;
 
   a {
     font-size: .95rem;
