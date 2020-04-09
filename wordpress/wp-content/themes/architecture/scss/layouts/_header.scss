@@ -37,7 +37,7 @@
     }
 
     .menu-toggle {
-      width: 50px;
+      width: 40px;
       background: transparent;
       border: none;
       z-index: 500;
@@ -54,7 +54,6 @@
         width: 100%;
         background-color: $borderColor;
         height: 2px;
-        margin: 1px 0px;
         display: inline-block;
 
         &:nth-child(2) {
@@ -87,7 +86,7 @@
           flex-direction: column;
           background: black;
           width: 100vw;
-          height: 100vh;
+          height: 110vh;
           align-items: center;
           justify-content: center;
           margin-left: -40px;

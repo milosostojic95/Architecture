@@ -477,7 +477,7 @@ a {
 }
 
 .site-header .header-wrapper .menu-toggle {
-  width: 50px;
+  width: 40px;
   background: transparent;
   border: none;
   z-index: 500;
@@ -499,7 +499,6 @@ a {
   width: 100%;
   background-color: #fff;
   height: 2px;
-  margin: 1px 0px;
   display: inline-block;
 }
 
@@ -544,7 +543,7 @@ a {
             flex-direction: column;
     background: black;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

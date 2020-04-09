@@ -8,5 +8,5 @@
       <?php the_post_thumbnail(); ?>
     <?php endif; ?>
   </div>
-    <?php endif; ?>
+<?php endif; ?>
 
