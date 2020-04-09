@@ -156,8 +156,8 @@ p {
 .preloader .preloader-content {
   background-color: black;
   position: relative;
-  -webkit-animation: reveal .7s ease-in-out forwards;
-          animation: reveal .7s ease-in-out forwards;
+  -webkit-animation: reveal .5s ease-in-out forwards;
+          animation: reveal .5s ease-in-out forwards;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
@@ -171,11 +171,11 @@ p {
   width: 101%;
   background: white;
   z-index: 1;
-  animation: reveal .7s reverse forwards;
+  animation: reveal .5s reverse forwards;
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
 }
 
 @-webkit-keyframes reveal {
@@ -202,7 +202,7 @@ p {
 
 .preloader .preloader-content h1 {
   color: white;
-  padding: 3rem 8rem;
+  padding: 2rem 5rem;
 }
 
 .loader-finish {
@@ -594,7 +594,8 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: normal;
-  color: #969696;
+  color: #b5b5b5;
+  text-shadow: 1px 1px 8px #000000;
 }
 
 .hero {
@@ -1664,10 +1665,18 @@ p {
   padding: 2rem 0 8rem;
 }
 
+.about-us .about-us-wrapper h1 {
+  text-align: center;
+}
+
 .about-us .about-us-wrapper p {
   line-height: 1.5;
   color: #7e7d7d;
   font-size: 1rem;
+  text-align: center;
+}
+
+.work-process h1 {
   text-align: center;
 }
 

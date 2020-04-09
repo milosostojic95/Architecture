@@ -1,5 +1,9 @@
 .work-process {
 
+  h1 {
+    text-align: center;
+  }
+
   @include breakpoint(mobile) {
     padding: 0 2rem;
   }
@@ -39,6 +43,8 @@
         width: 70%;
       }
     }
+
+
 
     h3 {
       text-align: center;

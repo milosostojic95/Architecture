@@ -113,7 +113,7 @@ p {
   .preloader-content {
     background-color: black;
     position: relative;
-    animation: reveal .7s ease-in-out forwards;
+    animation: reveal .5s ease-in-out forwards;
     transform-origin: left;
 
     &::before {
@@ -125,9 +125,9 @@ p {
       width: 101%;
       background: white;
       z-index: 1;
-      animation: reveal .7s reverse forwards;
+      animation: reveal .5s reverse forwards;
       transform-origin: right;
-      animation-delay: 1s;
+      animation-delay: .7s;
 
       @keyframes reveal {
         0% {
@@ -142,7 +142,7 @@ p {
 
     h1 {
       color: white;
-      padding: 3rem 8rem;
+      padding: 2rem 5rem;
     }
   }
 }
