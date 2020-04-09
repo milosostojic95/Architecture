@@ -1,5 +1,5 @@
 <?php if(has_post_thumbnail()) : ?>
-	<div class="featured-image">
+	<div class="left-part-img">
     <?php if ( ! is_single() ) : ?>
       <a href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail(); ?>

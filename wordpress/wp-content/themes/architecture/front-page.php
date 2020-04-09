@@ -57,7 +57,7 @@
             <p>
               The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
             </p>
-            <div class="project-btn-left">
+            <div class="project-btn-right">
               <a href="">read more
                 <span class="right-arrow"></span>
               </a>
@@ -67,24 +67,43 @@
       </div>
         <!-- project 2 -->
       <div class="columns">
-        <div class="project">
-        <div class="left-part-img">
+        <div class="project only-lg">
+          <div class="left-part-content">
+            <h3>2010</h3>
+              <a href="" class="left-title">
+                <h1>Poolscape Villa</h1>
+              </a>
+              <p>
+                The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
+              </p>
+              <div class="project-btn-left">
+                <a href="">read more
+                  <span class="right-arrow"></span>
+                </a>
+              </div>
+            </div>
+          <div class="right-part-img">
             <img src="<?php echo get_template_directory_uri();?>/assets/project2.jpg" alt="">
           </div>
-          <div class="right-part-content">
-            <h3>2010</h3>
-            <a href="" class="left-title">
-              <h1>Poolscape Villa</h1>
-            </a>
-            <p>
-              The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
-            </p>
-            <div class="project-btn-left">
-              <a href="">read more
-                <span class="right-arrow"></span>
-              </a>
-            </div>
+        </div>
+        <div class="project only-xs">
+          <div class="right-part-img">
+            <img src="<?php echo get_template_directory_uri();?>/assets/project2.jpg" alt="">
           </div>
+          <div class="left-part-content">
+            <h3>2010</h3>
+              <a href="" class="left-title">
+                <h1>Poolscape Villa</h1>
+              </a>
+              <p>
+                The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
+              </p>
+              <div class="project-btn-left">
+                <a href="">read more
+                  <span class="right-arrow"></span>
+                </a>
+              </div>
+            </div>
         </div>
       </div>
         <!-- project 3 -->
@@ -101,7 +120,7 @@
             <p>
               The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
             </p>
-            <div class="project-btn-left">
+            <div class="project-btn-right">
               <a href="">read more
                 <span class="right-arrow"></span>
               </a>

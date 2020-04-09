@@ -117,10 +117,101 @@
         color: $textColor;
       }
     }
+
+    .left-part-content {
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+        padding: 3rem 0;
+      }
+
+      @include breakpoint(smallTablet) {
+        flex: 45%;
+        padding: 5rem 4rem 5rem 0;
+      }
+
+      h3 {
+        text-align: right;
+        color: $sectionHeadingColor;
+        font-size: .95rem;
+        margin-bottom: 1rem;
+        position: relative;
+
+        &::before {
+          content: '';
+          background-color: $hoverTextColor;
+          height: 1px;
+          top: 50%;
+          position: absolute;
+
+          @include breakpoint(mobile) {
+            width: 20px;
+            right: -35px;
+          }
+
+          @include breakpoint(smallTablet) {
+            width: 80px;
+            right: -90px;
+          }
+        }
+      }
+
+      .left-title {
+
+        h1 {
+          color: $sectionHeadingColor;
+            font-size: 40px;
+            text-align: right;
+        }
+      }
+
+      p {
+        line-height: 1.5;
+        color: $textColor;
+        text-align: right;
+      }
+    }
+
+    .right-part-img {
+
+      @include breakpoint(mobile) {
+        flex-basis: 100%;
+      }
+
+      @include breakpoint(smallTablet) {
+        flex: 55%;
+      }
+
+      img {
+        height: 420px;
+        width: 100%;
+      }
+    }
   }
+
+  .only-lg {
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+
+    @include breakpoint(smallTablet) {
+      display: flex;
+    }
+  }
+
+  .only-xs {
+
+    @include breakpoint(mobile) {
+      display: block;
+    }
+
+    @include breakpoint(smallTablet) {
+      display: none;
+    }
+  }
+
 }
-
-
 
 
 
