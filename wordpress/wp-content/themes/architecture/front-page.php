@@ -57,7 +57,7 @@
             <p>
               The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
             </p>
-            <div class="project-btn-right">
+            <div class="project-btn-left">
               <a href="">read more
                 <span class="right-arrow"></span>
               </a>
@@ -76,7 +76,7 @@
               <p>
                 The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
               </p>
-              <div class="project-btn-left">
+              <div class="project-btn-right">
                 <a href="">read more
                   <span class="right-arrow"></span>
                 </a>
@@ -98,7 +98,7 @@
               <p>
                 The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
               </p>
-              <div class="project-btn-left">
+              <div class="project-btn-right">
                 <a href="">read more
                   <span class="right-arrow"></span>
                 </a>
@@ -120,7 +120,7 @@
             <p>
               The Seascape Villas project constitutes one of the first urban interventions in this very unique context, a landscape dominated by mountains and sea.
             </p>
-            <div class="project-btn-right">
+            <div class="project-btn-left">
               <a href="">read more
                 <span class="right-arrow"></span>
               </a>
