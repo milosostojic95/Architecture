@@ -9,7 +9,7 @@
 </section>
 <section class="blog-content">
   <div class="row">
-  <h1 class="section-heading">Projects</h1>
+    <h1 class="section-heading">Projects</h1>
     <div class="blog-content-wrapper">
       <div class="blog-items">
         <?php if(have_posts()) : ?>
@@ -18,8 +18,10 @@
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
+      <div class="widget-content">
+        <?php get_sidebar(); ?>
+      </div>
     </div>
   </div>
-  <?php get_aside();?>
 </section>
 <?php get_footer(); ?>
