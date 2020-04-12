@@ -20,5 +20,6 @@
       </div>
     </div>
   </div>
+  <?php get_aside();?>
 </section>
 <?php get_footer(); ?>

@@ -90,11 +90,7 @@ function architecture_content_width() {
 }
 add_action( 'after_setup_theme', 'architecture_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
+// aside widget
 function architecture_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'architecture' ),
