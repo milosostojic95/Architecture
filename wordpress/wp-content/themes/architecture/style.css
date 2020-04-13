@@ -903,9 +903,6 @@ p {
 }
 
 .projects .project .right-part-content h3 {
-  color: #000;
-  font-size: .95rem;
-  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -917,11 +914,6 @@ p {
   top: 50%;
   left: -90px;
   position: absolute;
-}
-
-.projects .project .right-part-content .right-title h1 {
-  color: #000;
-  font-size: 40px;
 }
 
 .projects .project .right-part-content p {

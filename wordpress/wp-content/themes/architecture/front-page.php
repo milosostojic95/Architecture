@@ -59,9 +59,9 @@
                 <?php the_post_thumbnail(); ?>
               </div>
               <div class="right-part-content">
-                <h3>2010</h3>
-                <a href="" class="right-title">
-                  <h1><?php the_title();?></h1>
+                <h3 class="section-small-heading">2010</h3>
+                <a href="<?php the_permalink(); ?>" >
+                  <h1 class="section-heading"><?php the_title();?></h1>
                 </a>
                 <?php the_excerpt()?>
                 <div class="project-btn-left">

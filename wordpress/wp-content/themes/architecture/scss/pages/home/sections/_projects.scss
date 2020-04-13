@@ -88,9 +88,6 @@
       }
 
       h3 {
-        color: $sectionHeadingColor;
-        font-size: .95rem;
-        margin-bottom: 1rem;
         position: relative;
 
         &::before {
@@ -101,14 +98,6 @@
           top: 50%;
           left: -90px;
           position: absolute;
-        }
-      }
-
-      .right-title {
-
-        h1 {
-          color: $sectionHeadingColor;
-          font-size: 40px;
         }
       }
 
