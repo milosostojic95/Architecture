@@ -18,6 +18,9 @@
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
+      <div class="widget-content">
+        <?php get_sidebar(); ?>
+      </div>
     </div>
   </div>
 </section>
