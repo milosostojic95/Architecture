@@ -38,11 +38,12 @@
       </div>
     </div>
   </section>
+  <?php $projects = get_field('project_title'); ?>
   <section class="projects only-lg">
     <div class="row">
       <div class="projects-title">
-        <h2 class="section-small-heading">Last Projects</h2>
-        <h1 class="section-heading">Make it with passion.</h1>
+        <h2 class="section-small-heading"><?php echo $projects['small_title'];?></h2>
+        <h1 class="section-heading"><?php echo $projects['big_title']; ?></h1>
       </div>
         <!-- project 1 -->
       <?php
