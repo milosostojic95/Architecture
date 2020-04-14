@@ -4,16 +4,16 @@
   */
   get_header();
 ?>
+<?php $abouthero = get_field('about_hero');?>
 <section class="about-hero" style="background:url(<?php the_post_thumbnail_url();?>);">
   <div class="row">
     <div class="flex-start">
-      <h3 class="small-heading">about our employers</h3>
+      <h3 class="small-heading"><?php echo $abouthero['small_title']; ?></h3>
       <h1 class="main-heading">
-        We are based on collective work
-        and shared knowledge
+        <?php echo $abouthero['main_title']; ?>
       </h1>
       <div class="hero-btn">
-          <a href="http://architecture/?page_id=42">hire us</a>
+          <a href="http://architecture/?page_id=42"><?php echo $abouthero['about_button']; ?></a>
         </div>
     </div>
   </div>
