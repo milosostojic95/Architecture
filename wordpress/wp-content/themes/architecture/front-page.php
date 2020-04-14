@@ -1,16 +1,17 @@
 <?php get_header(); ?>
+<?php $hero = get_field('home_hero'); ?>
   <section class="hero" style="background: url(<?php the_post_thumbnail_url(); ?>);">
     <div class="row">
       <div class="overlay"></div>
       <div class="hero-wrapper flex-center">
         <div class="hero-content">
-          <h3 class="small-heading">Cacak, Serbia</h3>
-          <h1 class="main-heading">Awesome Design for the Vorokhta Hub</h1>
+          <h3 class="small-heading"><?php echo $hero['small_title']; ?></h3>
+          <h1 class="main-heading"><?php echo $hero['main_title']; ?></h1>
           <p>
-            The main objective of the project – transformation of Vorokhta City in innovative <br> SMART CITY (village) and tourist center.
+            <?php echo $hero['main_text'];?>
           </p>
           <div class="hero-btn">
-            <a href="http://architecture/?page_id=45">explore it</a>
+            <a href="http://architecture/?page_id=45"><?php echo $hero['main_button'];?></a>
           </div>
         </div>
       </div>

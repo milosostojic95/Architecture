@@ -33,7 +33,7 @@ window.addEventListener('load',() =>{
   const preloader = document.querySelector('.preloader');
   setTimeout(() => {
     preloader.classList.add('loader-finish');
-  },1500)
+  },1400)
 });
 
 

@@ -1210,7 +1210,7 @@ p {
 
 .blog-content .blog-content-wrapper .blog-items article .featured-image a img {
   width: 100%;
-  height: 100%;
+  height: 270px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
